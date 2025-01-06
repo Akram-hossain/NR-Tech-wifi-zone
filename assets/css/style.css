@@ -39,6 +39,10 @@ Theme Primary Font Family: "Inter", serif;
         background: linear-gradient(90deg, rgba(237, 45, 143, 0.2) 0%, rgba(255, 242, 46, 0.2) 27.8%, rgba(255, 242, 46, 0) 57.31%);
     }
 
+    .common-para{
+        @apply text-sm font-normal text-black;
+    }
+
 }
 
 .anim {
