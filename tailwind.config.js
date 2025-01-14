@@ -22,24 +22,28 @@ module.exports = {
     extend: {
       boxShadow: {  
         'first': '0px 4px 10px 0px #00000040',  
+        'second': '0px 2px 10px 0px #ED289140',  
       },
       backgroundImage: {
         'nav-drop': "url('/assets/images/nav-drop-bg.svg')", 
       },
       fontFamily: {
         'inter': ['Inter', 'serif'], 
-        'fira': ['Fira Sans', 'serif'], 
+        'rubik': ['Rubik', 'serif'], 
       },
       backgroundColor: {
         'first': '#F53838', 
         'dark': '#2A2A2A', 
         'pink': '#FFE8E8', 
+        'pink-2': '#FFF5F5', 
       },
       borderColor: {
         'first' : '#FFFAFA', 
+        'deep' : '#F53838', 
       },
       colors: {
         'black': '#2A2A2A', 
+        'deep': '#F53838', 
       },
     },
   },
