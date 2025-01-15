@@ -56,6 +56,10 @@ Theme Primary Font Family: "Inter", serif;
     background-color: #FFF7EC;
     background: linear-gradient(180deg, #FFF7EC 0%, #FFF5EB 28.5%, #FEF4F3 69%, #FFE3F1 100%);
 }
+.footer-bg{
+    background-color: #FFF7EC;
+    background: linear-gradient(180deg, #FFF7EC 0%, #FFF5EB 28.5%, #fff 69%, #fff 100%);
+}
 
 
 /* custom responsive css */
