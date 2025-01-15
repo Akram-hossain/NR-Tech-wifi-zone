@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 
 /* *******************************************
 Project Name: NR Tech Wifi Zone
@@ -23,6 +23,9 @@ Theme Primary Font Family: "Inter", serif;
         @apply font-inter;
         overflow-x: hidden;
     }
+    h1,h2,h3,h4,h5,h6{
+        @apply font-rubik;
+    }
 
     button,
     a,
@@ -39,10 +42,23 @@ Theme Primary Font Family: "Inter", serif;
         background: linear-gradient(90deg, rgba(237, 45, 143, 0.2) 0%, rgba(255, 242, 46, 0.2) 27.8%, rgba(255, 242, 46, 0) 57.31%);
     }
 
+    .common-para{
+        @apply text-sm font-normal text-black;
+    }
+
 }
 
 .anim {
     @apply transition duration-500 ease-in-out;
+}
+
+.about-bg{
+    background-color: #FFF7EC;
+    background: linear-gradient(180deg, #FFF7EC 0%, #FFF5EB 28.5%, #FEF4F3 69%, #FFE3F1 100%);
+}
+.footer-bg{
+    background-color: #FFF7EC;
+    background: linear-gradient(180deg, #FFF7EC 0%, #FFF5EB 28.5%, #fff 69%, #fff 100%);
 }
 
 
