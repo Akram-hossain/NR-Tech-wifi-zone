@@ -23,6 +23,7 @@ module.exports = {
       boxShadow: {  
         'first': '0px 4px 10px 0px #00000040',  
         'second': '0px 2px 10px 0px #ED289140',  
+        'three': '-10px 20px 30px 0px #F5383866',  
       },
       backgroundImage: {
         'nav-drop': "url('/assets/images/nav-drop-bg.svg')", 
