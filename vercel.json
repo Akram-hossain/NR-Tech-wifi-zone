@@ -1,26 +1,9 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "index.html",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "contact.html",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "ftp-list.html",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "packages.html",
-        "use": "@vercel/static"
-      },
-      {
-        "src": "services.html",
-        "use": "@vercel/static"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "*.html",
+      "use": "@vercel/static"
+    }
+  ]
+}
