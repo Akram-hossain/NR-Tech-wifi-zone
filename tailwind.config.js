@@ -24,6 +24,8 @@ module.exports = {
         'first': '0px 4px 10px 0px #00000040',  
         'second': '0px 2px 10px 0px #ED289140',  
         'three': '-10px 20px 30px 0px #F5383866',  
+        'four': '0px 10.2px 15.29px 0px #F5383840',  
+        'five': '0px 100px 80px 0px #3131311A',  
       },
       backgroundImage: {
         'nav-drop': "url('/assets/images/nav-drop-bg.svg')", 
