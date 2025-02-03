@@ -18,10 +18,20 @@
   <link href="./assets/css/style.css" rel="stylesheet">
   <!-- tailwind CSS end -->
 
-  <title>NR TECH || Services </title>
+  <title>NR TECH || সেবা  </title>
 </head>
 
 <body class="anim">
+
+  <!-- whatsapp button -->
+  <div class="fixed bottom-6 right-2 z-[9999]">
+    <a aria-label='whatsapp' href="https://api.whatsapp.com/send?phone=8801723941760"
+      class="group flex xl:inline-flex items-center justify-center whatsapp-bttn h-9 xl:h-[48px] w-[45px] xl:w-[165px] rounded-full">
+    <Image src="/assets/images/whatsapp-w.svg" alt="whatsapp icon"
+      class="xl:mr-2 w-5 xl:w-7 anim" />
+    <span class="anim text-xs xl:text-base font-semibold text-white hidden xl:block">WhatsApp</span>
+    </a>
+  </div>
 
   <!-- top section start -->
   <section class="w-full hidden xl:flex bg-black py-[14px]">
@@ -30,12 +40,13 @@
         <div class="text-start">
           <ul class="flex items-center gap-x-6">
             <li>
-              <p class="text-sm font-normal text-[#D8D8D8]">Welcome to Nr Wifi Zone</p>
+              <p class="text-sm font-normal text-[#D8D8D8]"><span class="text-deep">NR TECH</span> - ওয়াইফাই জোনে
+                আপনাকে স্বাগতম।</p>
             </li>
             <li>
               <p class="text-sm font-normal text-[#D8D8D8] flex items-center gap-x-1">
                 <img src="./assets/images/icons/call-icon.svg" alt="call">
-                +8801748745845
+                ০১৭৪৮-৭৪৫৮৪৫
               </p>
             </li>
             <li>
@@ -89,15 +100,15 @@
   </section>
   <!-- top section end -->
 
-   <!-- header section start -->
-   <header class="header-section py-3 shadow-first">
+  <!-- header section start -->
+  <header class="header-section py-3 shadow-first">
     <div class="container">
       <div class="grid grid-cols-7 items-center gap-x-2 xl:grid-cols-12">
         <!-- logo -->
         <div class="logo col-span-3 xl:col-span-4">
           <a href="index.html">
             <img src="./assets/images/logo.svg" alt="NR Tech Logo"
-              class="object-fill max-w-[110px] w-full xl:max-w-[214px]">
+              class="object-fill max-w-[110px] w-full xl:max-w-[200px]">
           </a>
         </div>
         <!-- logo -->
@@ -134,14 +145,15 @@
                 </div>
                 <ul class="w-full xl:flex xl:items-center xl:gap-x-[26px] xl:justify-end">
                   <li><a href="index.html"
-                      class="block text-base font-semibold text-black border-b border-[#FAFAFA] py-3 px-1.5 anim hover:bg-[#FFF2F2] xl:py-0 xl:border-0">Home</a>
+                      class="block text-base font-semibold text-black border-b border-[#FAFAFA] py-3 px-1.5 anim hover:bg-[#FFF2F2] xl:py-0 xl:border-0">হোম</a>
                   </li>
                   <li><a href="packages.html"
-                      class="block text-base font-semibold text-black border-b border-[#FAFAFA] py-3 px-1.5 anim hover:bg-[#FFF2F2] xl:py-0 xl:border-0">Package</a>
+                      class="block text-base font-semibold text-black border-b border-[#FAFAFA] py-3 px-1.5 anim hover:bg-[#FFF2F2] xl:py-0 xl:border-0">প্যাকেজ</a>
                   </li>
                   <li class="relative group">
-                    <a href="#"
-                      class="block xl:flex xl:items-center xl:gap-x-2 relative text-base font-semibold text-black border-b border-[#FAFAFA] py-3 px-1.5 anim hover:bg-[#FFF2F2] xl:py-0 xl:border-0">Services
+                    <a href="services.html"
+                      class="block xl:flex menu active xl:items-center xl:gap-x-2 relative text-base font-semibold text-black border-b border-[#FAFAFA] py-3 px-1.5 anim hover:bg-[#FFF2F2] xl:py-0 xl:border-0">সেবা
+                      সমূহ
                       <svg class="hidden xl:block" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.5 8.25L12 15.75L4.5 8.25" stroke="#2A2A2A" stroke-width="1.5"
@@ -150,29 +162,34 @@
                     </a>
                     <ul
                       class="group-hover:flex flex-col my-2 ml-6 hidden anim xl:absolute xl:top-4 xl:-left-4 xl:bg-white xl:p-2 xl:min-w-[150px] xl:border xl:border-black xl:border-opacity-20">
-                      <li class="border-b border-[#FAFAFA] py-2 px-1 hover:bg-[#FFF2F2] last:border-b-0"><a href="ftp-list.html"
-                          class="block text-sm font-medium ">Hotspot</a>
+                      <li class="border-b border-[#FAFAFA] py-2 px-1 hover:bg-[#FFF2F2] last:border-b-0"><a
+                          href="ftp-list.html" class="block text-sm font-medium ">হটস্পট</a>
                       </li>
-                      <li class="border-b border-[#FAFAFA] py-2 px-1 hover:bg-[#FFF2F2] last:border-b-0"><a href="ftp-list.html"
-                          class="block text-sm font-medium">Internet</a>
+                      <li class="border-b border-[#FAFAFA] py-2 px-1 hover:bg-[#FFF2F2] last:border-b-0"><a
+                          href="ftp-list.html" class="block text-sm font-medium">FTP সার্ভার</a>
+                      </li>
+                      <li class="border-b border-[#FAFAFA] py-2 px-1 hover:bg-[#FFF2F2] last:border-b-0"><a
+                          href="ftp-list.html" class="block text-sm font-medium">লাইভ টিভি</a>
                       </li>
                     </ul>
                   </li>
                   <li>
                     <a href="contact.html"
-                      class="block text-base font-semibold text-black border-b border-[#FAFAFA] py-3 px-1.5 anim hover:bg-[#FFF2F2] whitespace-nowrap xl:py-0  xl:border-0">Contact
-                      Us</a>
+                      class="block text-base font-semibold text-black border-b border-[#FAFAFA] py-3 px-1.5 anim hover:bg-[#FFF2F2] whitespace-nowrap xl:py-0  xl:border-0">যোগাযোগ
+                      করুন
+                    </a>
                   </li>
                   <li>
-                    <a href="#"
+                    <a href="http://nrtechbd.net/" target="_blank"
                       class="bg-first text-white rounded-md py-2.5 px-6 text-lg font-semibold anim hover:bg-dark">
                       Self Care
                     </a>
                   </li>
                 </ul>
                 <div class="text-center xl:hidden">
-                  <h6 class="font-semibold text-black text-sm mb-3 uppercase">Welcome to Nr Wifi Zone</h6>
-                  <p class="common-para">+8801748745845</p>
+                  <h6 class="font-semibold text-black text-sm mb-3 uppercase">NR TECH - ওয়াইফাই জোনে আপনাকে স্বাগতম।
+                  </h6>
+                  <p class="common-para">০১৭৪৮-৭৪৫৮৪৫</p>
                   <p class="common-para">nrwifizone@gmail.com</p>
 
                   <ul class="mt-[30px] flex items-center gap-x-[30px] justify-center">
@@ -226,9 +243,13 @@
   <section class="w-full package-bg py-16 xl:py-[112px]">
     <div class="container">
       <div class="text-center">
-        <h1 class="text-[20px] font-semibold text-[#231D4F] uppercase xl:text-[40px]">Our Best and popular <span
-            class="text-[#F53838]">SERVICES</span></h1>
-        <p class="text-sm font-medium text-[#848199] mt-5 xl:text-[20px] xl:leading-7 xl:mt-6">We deliver reliable, high-speed internet solutions tailored to your needs. Whether for home <br> or business, our services are trusted by thousands for their performance, affordability, and <br> exceptional support. Upgrade to the best—stay connected with us!</p>
+        <h1 class="text-[20px] font-semibold text-[#231D4F] uppercase xl:text-[40px]">আমাদের সেরা এবং জনপ্রিয় <span
+            class="text-[#F53838]">সেবা</span></h1>
+        <p class="text-sm font-medium text-[#848199] mt-5 xl:text-[20px] xl:leading-7 xl:mt-6">আমরা আপনার চাহিদার
+          অনুযায়ী নির্ভরযোগ্য, উচ্চগতির ইন্টারনেট সমাধান প্রদান করি। বাড়ি বা ব্যবসা যে কোনও <br
+            class="hidden xl:block"> ক্ষেত্রেই, আমাদের সেবা হাজার হাজার গ্রাহকের বিশ্বাস অর্জন করেছে তাদের কর্মক্ষমতা,
+          সাশ্রয়ী মূল্য এবং অসাধারণ <br class="hidden xl:block"> সহায়তার জন্য। সেরা পরিষেবার জন্য আপগ্রেড করুন—আমাদের
+          সাথে সংযুক্ত থাকুন!</p>
       </div>
     </div>
   </section>
@@ -237,60 +258,79 @@
   <!-- main services -->
   <section class="w-full py-10 xl:py-[120px]">
     <div class="container">
-       <div class="w-full grid grid-cols-2 gap-4 xl:grid-cols-4 xl:items-center xl:gap-x-8">
+      <div class="w-full grid grid-cols-2 gap-4 xl:grid-cols-4 xl:items-center xl:gap-x-8">
         <!-- item -->
-         <div class="w-full border border-[#F53838] rounded-xl px-2.5 py-5 text-center xl:py-10 xl:px-3 anim hover:bg-[#F53838] xl:hover:shadow-four group">
-          <img src="./assets/images/icons/services-01.svg" alt="services-01" class="mx-auto xl:w-20 anim group-hover:hidden">
-          <img src="./assets/images/icons/services-01-w.svg" alt="services-01" class="mx-auto xl:w-20 anim hidden group-hover:block">
-          <h5 class="my-2.5 font-semibold text-lg text-[#FBAFAF] xl:text-[32px] xl:my-5 anim group-hover:text-white">Fastest Internet</h5>
-          <p class="text-[10px] font-normal text-[#848199] xl:text-lg anim group-hover:text-white">Blazing-fast internet for seamless connectivity.</p>
-         </div>
-        <!-- item -->
-        <!-- item -->
-         <div class="w-full border border-[#F53838] rounded-xl px-2.5 py-5 text-center xl:py-10 xl:px-3 anim hover:bg-[#F53838] xl:hover:shadow-four group">
-          <img src="./assets/images/icons/services-02.svg" alt="services-01" class="mx-auto xl:w-20 anim group-hover:hidden">
-          <img src="./assets/images/icons/services-02-w.svg" alt="services-01" class="mx-auto xl:w-20 anim hidden group-hover:block">
-          <h5 class="my-2.5 font-semibold text-lg text-[#FBAFAF] xl:text-[32px] xl:my-5 anim group-hover:text-white">Hotspot Internet</h5>
-          <p class="text-[10px] font-normal text-[#848199] xl:text-lg anim group-hover:text-white">Portable, fast, and reliable hotspot internet.</p>
-         </div>
+        <div
+          class="w-full border border-[#F53838] rounded-xl px-2.5 py-5 text-center xl:py-10 xl:px-3 anim hover:bg-[#F53838] xl:hover:shadow-four group">
+          <img src="./assets/images/icons/services-01.svg" alt="services-01"
+            class="mx-auto xl:w-20 anim group-hover:hidden">
+          <img src="./assets/images/icons/services-01-w.svg" alt="services-01"
+            class="mx-auto xl:w-20 anim hidden group-hover:block">
+          <h5 class="my-2.5 font-semibold text-lg text-[#FBAFAF] xl:text-[32px] xl:my-5 anim group-hover:text-white">
+            ইন্টারনেট</h5>
+          <p class="text-[10px] font-normal text-[#848199] xl:text-lg anim group-hover:text-white">নিরবচ্ছিন্ন সংযোগের
+            জন্য ঝলমলে দ্রুত ইন্টারনেট।</p>
+        </div>
         <!-- item -->
         <!-- item -->
-         <div class="w-full border border-[#F53838] rounded-xl px-2.5 py-5 text-center xl:py-10 xl:px-3 anim hover:bg-[#F53838] xl:hover:shadow-four group">
-          <img src="./assets/images/icons/services-03.svg" alt="services-01" class="mx-auto xl:w-20 anim group-hover:hidden">
-          <img src="./assets/images/icons/services-03-w.svg" alt="services-01" class="mx-auto xl:w-20 anim hidden group-hover:block">
-          <h5 class="my-2.5 font-semibold text-lg text-[#FBAFAF] xl:text-[32px] xl:my-5 anim group-hover:text-white">FTP Server</h5>
-          <p class="text-[10px] font-normal text-[#848199] xl:text-lg anim group-hover:text-white">Secure and fast FTP server for seamless file transfers.</p>
-         </div>
+        <div
+          class="w-full border border-[#F53838] rounded-xl px-2.5 py-5 text-center xl:py-10 xl:px-3 anim hover:bg-[#F53838] xl:hover:shadow-four group">
+          <img src="./assets/images/icons/services-02.svg" alt="services-01"
+            class="mx-auto xl:w-20 anim group-hover:hidden">
+          <img src="./assets/images/icons/services-02-w.svg" alt="services-01"
+            class="mx-auto xl:w-20 anim hidden group-hover:block">
+          <h5 class="my-2.5 font-semibold text-lg text-[#FBAFAF] xl:text-[32px] xl:my-5 anim group-hover:text-white">
+            হটস্পট ইন্টারনেট</h5>
+          <p class="text-[10px] font-normal text-[#848199] xl:text-lg anim group-hover:text-white">পোর্টেবল, দ্রুত এবং
+            নির্ভরযোগ্য হটস্পট ইন্টারনেট।</p>
+        </div>
         <!-- item -->
         <!-- item -->
-         <div class="w-full border border-[#F53838] rounded-xl px-2.5 py-5 text-center xl:py-10 xl:px-3 anim hover:bg-[#F53838] xl:hover:shadow-four group">
-          <img src="./assets/images/icons/services-04.svg" alt="services-01" class="mx-auto xl:w-20 anim group-hover:hidden">
-          <img src="./assets/images/icons/services-04-w.svg" alt="services-01" class="mx-auto xl:w-20 anim hidden group-hover:block">
-          <h5 class="my-2.5 font-semibold text-lg text-[#FBAFAF] xl:text-[32px] xl:my-5 anim group-hover:text-white">Live Tv</h5>
-          <p class="text-[10px] font-normal text-[#848199] xl:text-lg anim group-hover:text-white">Watch live TV with clear, real-time streaming anytime.</p>
-         </div>
+        <div
+          class="w-full border border-[#F53838] rounded-xl px-2.5 py-5 text-center xl:py-10 xl:px-3 anim hover:bg-[#F53838] xl:hover:shadow-four group">
+          <img src="./assets/images/icons/services-03.svg" alt="services-01"
+            class="mx-auto xl:w-20 anim group-hover:hidden">
+          <img src="./assets/images/icons/services-03-w.svg" alt="services-01"
+            class="mx-auto xl:w-20 anim hidden group-hover:block">
+          <h5 class="my-2.5 font-semibold text-lg text-[#FBAFAF] xl:text-[32px] xl:my-5 anim group-hover:text-white">FTP
+            সার্ভার</h5>
+          <p class="text-[10px] font-normal text-[#848199] xl:text-lg anim group-hover:text-white">নিরাপদ এবং দ্রুত FTP
+            সার্ভার, যা নিরবচ্ছিন্ন ফাইল ট্রান্সফারের নিশ্চয়তা দেয়।</p>
+        </div>
         <!-- item -->
-       </div>
+        <!-- item -->
+        <div
+          class="w-full border border-[#F53838] rounded-xl px-2.5 py-5 text-center xl:py-10 xl:px-3 anim hover:bg-[#F53838] xl:hover:shadow-four group">
+          <img src="./assets/images/icons/services-04.svg" alt="services-01"
+            class="mx-auto xl:w-20 anim group-hover:hidden">
+          <img src="./assets/images/icons/services-04-w.svg" alt="services-01"
+            class="mx-auto xl:w-20 anim hidden group-hover:block">
+          <h5 class="my-2.5 font-semibold text-lg text-[#FBAFAF] xl:text-[32px] xl:my-5 anim group-hover:text-white">
+            লাইভ টিভি</h5>
+          <p class="text-[10px] font-normal text-[#848199] xl:text-lg anim group-hover:text-white">স্পষ্ট এবং
+            রিয়েল-টাইম স্ট্রিমিং এর মাধ্যমে যেকোনো সময় লাইভ টিভি দেখুন।</p>
+        </div>
+        <!-- item -->
+      </div>
     </div>
   </section>
   <!-- main services -->
 
   <!-- lets tak section start -->
-  <section class="w-full my-20 xl:py-[20px]">
+  <section class="w-full my-20 xl:py-[120px]">
     <div class="container">
       <div
         class="text-center bg-pink-2 rounded-lg py-6 px-2 pb-14 xl:max-w-[1088px] xl:mx-auto xl:py-[56px] xl:px-[120px] xl:pb-[120px]">
-        <h2 class="text-black text-base font-normal xl:text-2xl">Have you any Questions</h2>
-        <h3 class="text-black font-medium text-[22px] my-2.5 xl:text-4xl">Would You Like to Learn More? </h3>
-        <p class="common-para xl:!text-base">At NR Tech customer care is our top oriority. Our dedicated support team is
-          avallable 24/7 tc At NR Tech
-          customer care is our top oriority. Our dedicated customer care is our top.</p>
+        <h2 class="text-black text-base font-normal xl:text-2xl">আপনার কোনো প্রশ্ন আছে?</h2>
+        <h3 class="text-black font-medium text-[22px] my-2.5 xl:text-4xl">আপনি কি আরও জানতে চান? </h3>
+        <p class="common-para xl:!text-base">NR Tech-এ গ্রাহক সেবা আমাদের সর্বোচ্চ অগ্রাধিকার আমাদের নিবেদিত <br
+            class="hidden xl:block"> সহায়ক দল ২৪/৭ আপনার সেবায় প্রস্তুত।</p>
         <img src="./assets/images/get-bg-dots.svg" alt="get bg dots icon" class="w-full  xl:hidden">
       </div>
       <div class="text-center bg-white p-6 rounded-[14px] shadow-second w-[70%] mx-auto -mt-16 xl:max-w-[254px]">
         <img src="./assets/images/icons/call.svg" alt="icon for call" class="mx-auto">
-        <h4 class="font-medium text-xl text-black mt-5">Let’s Talk</h4>
-        <h5 class="font-light text-xl text-black mt-2">Get a call</h5>
+        <h4 class="font-medium text-xl text-black mt-5">চলুন কথা বলি</h4>
+        <a href="#" class="font-light text-xl text-deep mt-2 underline">কল করুন</a>
       </div>
     </div>
   </section>
@@ -304,8 +344,8 @@
           <a href="#" class="block">
             <img src="./assets/images/logo.svg" alt="logo" class="mx-auto max-w-[89px] xl:max-w-[169px] xl:mx-0">
           </a>
-          <p class="common-para mt-2.5 mb-5 xl:mt-[30px]"><strong>NR Wifi Zone</strong> is a private virtual network
-            that has <br> unique features and has high security.</p>
+          <p class="common-para mt-2.5 mb-5 xl:mt-[30px]"><strong>NR Wifi Zone</strong> একটি প্রাইভেট ভার্চুয়াল
+            নেটওয়ার্ক যা <br class="hidden xl:block"> ২০২৪ সাল থেকে বগুড়ায় কাজ করছে</p>
 
           <ul class="flex items-center justify-center gap-x-0 xl:justify-start">
             <li>
@@ -325,38 +365,39 @@
             </li>
           </ul>
         </div>
-        <div class="w-full mt-10 xl:col-span-7 xl:grid xl:grid-cols-3 xl:gap-x-4">
+        <div class="w-full mt-10 xl:col-span-7 gap-y-6 xl:gap-y-0 grid grid-cols-2 xl:grid-cols-3 xl:gap-x-4">
           <div class="w-full">
-            <h6 class="text-lg font-medium text-[#0B132A] mb-3 xl:mb-5">Quick Link</h6>
-            <ul class="flex items-center justify-between xl:flex-col xl:justify-start xl:items-start xl:gap-y-2.5">
-              <li><a href="#" class="block common-para">Home</a></li>
-              <li><a href="#" class="block common-para">About US</a></li>
-              <li><a href="#" class="block common-para">Package</a></li>
-              <li><a href="#" class="block common-para">Coverage list</a></li>
+            <h6 class="text-lg font-medium text-[#0B132A] mb-3 xl:mb-5">মেনু </h6>
+            <ul class="flex flex-col justify-start items-start xl:gap-y-2.5">
+              <li><a href="index.html" class="block common-para">হোম</a></li>
+              <li><a href="packages.html" class="block common-para">প্যাকেজ</a></li>
+              <li><a href="contact.html" class="block common-para"> যোগাযোগ করুন</a></li>
             </ul>
           </div>
-          <div class="w-full mt-4 xl:mt-0">
-            <h6 class="text-lg font-medium text-[#0B132A] mb-3 xl:mb-5">Services</h6>
-            <ul class="flex items-center justify-between xl:flex-col xl:justify-start xl:items-start xl:gap-y-2.5">
-              <li><a href="#" class="block common-para">FTP Server</a></li>
-              <li><a href="#" class="block common-para">Live TV</a></li>
-              <li><a href="#" class="block common-para">Broadband</a></li>
-              <li><a href="#" class="block common-para">Hotspot</a></li>
+          <div class="w-full xl:mt-0">
+            <h6 class="text-lg font-medium text-[#0B132A] mb-3 xl:mb-5">সেবা</h6>
+            <ul class="flex flex-col justify-start items-start xl:gap-y-2.5">
+              <li><a href="ftp-list.html" class="block common-para">FTP সার্ভার</a></li>
+              <li><a href="ftp-list.html" class="block common-para">লাইভ TV</a></li>
+              <li><a href="#" class="block common-para">ব্রডব্যান্ড</a></li>
+              <li><a href="#" class="block common-para">হটস্পট</a></li>
             </ul>
           </div>
-          <div class="w-full">
-            <h6 class="text-lg font-medium text-[#0B132A] mb-3 xl:mb-5">Address</h6>
-            <ul class="flex items-center justify-between xl:flex-col xl:justify-start xl:items-start xl:gap-y-2.5">
-              <li><a href="#" class="block common-para">Bisich,Bogura Sadar, Bogra-5800</a></li>
+          <div class="w-full col-span-2 xl:col-span-1">
+            <h6 class="text-lg font-medium text-[#0B132A] mb-3 xl:mb-5">আমাদের ঠিকানা</h6>
+            <ul class="flex flex-col justify-start items-start xl:gap-y-2.5">
+              <li><a href="#" class="block common-para">বিসিক,বগুড়া সদর, বগুড়া-৫৮০০</a></li>
               <li><a href="#" class="block common-para">support@nrtech.com.bd</a></li>
-              <li><a href="#" class="block common-para">+8801745-851246( WhatsApp )</a></li>
-              <li><a href="#" class="block common-para">09585 652 652</a></li>
+              <li><a href="#" class="block common-para">০১৭৪৫-৮৫১২৪৬(হোয়াটস্যাপ)</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="text-center border-t border-[#ECECEB] pt-6 mt-6">
-        <p class="text-[#a1acbf] font-normal text-xs">NR TECH - &copy; 2025 All Copy Rights Reserved</p>
+      <div
+        class="text-center border-t border-[#ECECEB] pt-6 mt-6 flex flex-col justify-center gap-y-2 xl:flex-row xl:justify-between xl:items-center">
+        <p class="text-[#a1acbf] font-normal text-xs">NR TECH - &copy; All right reserved 2025</p>
+        <p class="text-[#a1acbf] font-normal text-xs">Made with ❤️ by <a href="https://github.com/Akram-hossain"
+            target="_blank" class="text-deep">Akram</a></p>
       </div>
     </div>
   </footer>

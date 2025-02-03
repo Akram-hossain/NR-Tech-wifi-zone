@@ -18,10 +18,21 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <!-- tailwind CSS end -->
 
-  <title>NR TECH || Home </title>
+  <title>NR TECH || হোম </title>
 </head>
 
 <body class="anim">
+
+  <!-- whatsapp button -->
+  <div class="fixed bottom-6 right-2 z-[9999]">
+    <a aria-label='whatsapp' href="https://api.whatsapp.com/send?phone=8801723941760"
+      class="group flex xl:inline-flex items-center justify-center whatsapp-bttn h-9 xl:h-[48px] w-[45px] xl:w-[165px] rounded-full">
+    <Image src="/assets/images/whatsapp-w.svg" alt="whatsapp icon"
+      class="xl:mr-2 w-5 xl:w-7 anim" />
+    <span class="anim text-xs xl:text-base font-semibold text-white hidden xl:block">WhatsApp</span>
+    </a>
+  </div>
+  
 
   <!-- top section start -->
   <section class="w-full hidden xl:flex bg-black py-[14px]">
@@ -30,12 +41,13 @@
         <div class="text-start">
           <ul class="flex items-center gap-x-6">
             <li>
-              <p class="text-sm font-normal text-[#D8D8D8]">Welcome to Nr Wifi Zone</p>
+              <p class="text-sm font-normal text-[#D8D8D8]"><span class="text-deep">NR TECH</span> - ওয়াইফাই জোনে
+                আপনাকে স্বাগতম।</p>
             </li>
             <li>
               <p class="text-sm font-normal text-[#D8D8D8] flex items-center gap-x-1">
                 <img src="./assets/images/icons/call-icon.svg" alt="call">
-                +8801748745845
+                ০১৭৪৮-৭৪৫৮৪৫
               </p>
             </li>
             <li>
@@ -97,7 +109,7 @@
         <div class="logo col-span-3 xl:col-span-4">
           <a href="index.html">
             <img src="./assets/images/logo.svg" alt="NR Tech Logo"
-              class="object-fill max-w-[110px] w-full xl:max-w-[214px]">
+              class="object-fill max-w-[110px] w-full xl:max-w-[200px]">
           </a>
         </div>
         <!-- logo -->
@@ -134,14 +146,15 @@
                 </div>
                 <ul class="w-full xl:flex xl:items-center xl:gap-x-[26px] xl:justify-end">
                   <li><a href="index.html"
-                      class="block text-base font-semibold text-black border-b border-[#FAFAFA] py-3 px-1.5 anim hover:bg-[#FFF2F2] xl:py-0 xl:border-0">Home</a>
+                      class="block menu active text-base font-semibold text-black border-b border-[#FAFAFA] py-3 px-1.5 anim hover:bg-[#FFF2F2] xl:py-0 xl:border-0">হোম</a>
                   </li>
                   <li><a href="packages.html"
-                      class="block text-base font-semibold text-black border-b border-[#FAFAFA] py-3 px-1.5 anim hover:bg-[#FFF2F2] xl:py-0 xl:border-0">Package</a>
+                      class="block text-base font-semibold text-black border-b border-[#FAFAFA] py-3 px-1.5 anim hover:bg-[#FFF2F2] xl:py-0 xl:border-0">প্যাকেজ</a>
                   </li>
                   <li class="relative group">
-                    <a href="#"
-                      class="block xl:flex xl:items-center xl:gap-x-2 relative text-base font-semibold text-black border-b border-[#FAFAFA] py-3 px-1.5 anim hover:bg-[#FFF2F2] xl:py-0 xl:border-0">Services
+                    <a href="services.html"
+                      class="block xl:flex xl:items-center xl:gap-x-2 relative text-base font-semibold text-black border-b border-[#FAFAFA] py-3 px-1.5 anim hover:bg-[#FFF2F2] xl:py-0 xl:border-0">সেবা
+                      সমূহ
                       <svg class="hidden xl:block" width="24" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M19.5 8.25L12 15.75L4.5 8.25" stroke="#2A2A2A" stroke-width="1.5"
@@ -150,29 +163,34 @@
                     </a>
                     <ul
                       class="group-hover:flex flex-col my-2 ml-6 hidden anim xl:absolute xl:top-4 xl:-left-4 xl:bg-white xl:p-2 xl:min-w-[150px] xl:border xl:border-black xl:border-opacity-20">
-                      <li class="border-b border-[#FAFAFA] py-2 px-1 hover:bg-[#FFF2F2] last:border-b-0"><a href="ftp-list.html"
-                          class="block text-sm font-medium ">Hotspot</a>
+                      <li class="border-b border-[#FAFAFA] py-2 px-1 hover:bg-[#FFF2F2] last:border-b-0"><a
+                          href="ftp-list.html" class="block text-sm font-medium ">হটস্পট</a>
                       </li>
-                      <li class="border-b border-[#FAFAFA] py-2 px-1 hover:bg-[#FFF2F2] last:border-b-0"><a href="ftp-list.html"
-                          class="block text-sm font-medium">Internet</a>
+                      <li class="border-b border-[#FAFAFA] py-2 px-1 hover:bg-[#FFF2F2] last:border-b-0"><a
+                          href="ftp-list.html" class="block text-sm font-medium">FTP সার্ভার</a>
+                      </li>
+                      <li class="border-b border-[#FAFAFA] py-2 px-1 hover:bg-[#FFF2F2] last:border-b-0"><a
+                          href="ftp-list.html" class="block text-sm font-medium">লাইভ টিভি</a>
                       </li>
                     </ul>
                   </li>
                   <li>
                     <a href="contact.html"
-                      class="block text-base font-semibold text-black border-b border-[#FAFAFA] py-3 px-1.5 anim hover:bg-[#FFF2F2] whitespace-nowrap xl:py-0  xl:border-0">Contact
-                      Us</a>
+                      class="block text-base font-semibold text-black border-b border-[#FAFAFA] py-3 px-1.5 anim hover:bg-[#FFF2F2] whitespace-nowrap xl:py-0  xl:border-0">যোগাযোগ
+                      করুন
+                    </a>
                   </li>
                   <li>
-                    <a href="#"
+                    <a href="http://nrtechbd.net/" target="_blank"
                       class="bg-first text-white rounded-md py-2.5 px-6 text-lg font-semibold anim hover:bg-dark">
                       Self Care
                     </a>
                   </li>
                 </ul>
                 <div class="text-center xl:hidden">
-                  <h6 class="font-semibold text-black text-sm mb-3 uppercase">Welcome to Nr Wifi Zone</h6>
-                  <p class="common-para">+8801748745845</p>
+                  <h6 class="font-semibold text-black text-sm mb-3 uppercase">NR TECH - ওয়াইফাই জোনে আপনাকে স্বাগতম।
+                  </h6>
+                  <p class="common-para">০১৭৪৮-৭৪৫৮৪৫</p>
                   <p class="common-para">nrwifizone@gmail.com</p>
 
                   <ul class="mt-[30px] flex items-center gap-x-[30px] justify-center">
@@ -227,14 +245,14 @@
     <div class="container">
       <div class="w-full xl:grid xl:items-center xl:grid-cols-2">
         <div class="w-full">
-          <p class="text-black font-medium text-lg italic font-rubik xl:text-4xl">Experience</p>
-          <h1 class="text-[32px] font-bold font-rubik italic gradient-text-color uppercase xl:text-5xl xl:my-1">
-            Superfast
-            Internet</h1>
+          <p class="text-black font-medium text-lg italic font-rubik xl:text-4xl">অভিজ্ঞতা নিন</p>
+          <h1
+            class="text-[32px] font-bold font-rubik italic gradient-text-color uppercase xl:text-5xl xl:leading-[130%] xl:my-1">
+            সুপারফাস্ট ইন্টারনেটের</h1>
           <div class="text-end xl:text-start">
             <h5
-              class="italic font-medium text-[22px] text-end gradient-bg-one rounded-xl inline-block px-3 py-0.5 xl:text-5xl xl:py-1">
-              <span>AND</span> Enjoy Together
+              class="text-[22px] font-inter font-bold text-end gradient-bg-one rounded-xl inline-block px-3 py-0.5 xl:text-4xl xl:py-1">
+              <span class="font-medium">এবং</span> একসঙ্গে উপভোগ করুন
             </h5>
           </div>
         </div>
@@ -244,8 +262,9 @@
       </div>
       <div class="text-center mt-20 xl:mt-0 xl:text-start xl:relative xl:-top-28">
         <a href="#"
-          class="inline-flex items-center gap-x-6 bg-first text-white py-3 px-4 text-xl font-semibold anim hover:bg-dark rounded-lg xl:text-2xl xl:py-5 xl:px-[30px]">Register
-          Now <img src="./assets/images/icons/wifi-signal.svg" alt="signal icon" class="max-w-4 xl:max-w-8"></a>
+          class="inline-flex items-center gap-x-6 bg-first text-white py-3 px-4 text-xl font-semibold anim hover:bg-dark rounded-lg xl:text-2xl xl:py-5 xl:px-[30px]">এখনই
+          নিবন্ধন করুন <img src="./assets/images/icons/wifi-signal.svg" alt="signal icon"
+            class="max-w-4 xl:max-w-8"></a>
       </div>
     </div>
   </section>
@@ -254,33 +273,37 @@
   <!-- feature section start -->
   <section class="feature-section py-16 bg-white xl:py-[75px]">
     <div class="container">
-      <div class="grid grid-cols-2 gap-7 xl:grid-cols-4 xl:w-[80%] xl:mx-auto xl:gap-x-[40px]">
+      <div class="grid grid-cols-2 gap-7 xl:grid-cols-4 xl:w-[85%] xl:mx-auto xl:gap-x-[40px]">
         <!-- box -->
         <div
-          class="w-full bg-[#FFFAFA] border border-[#FFE8E8] rounded-[20px] p-5 flex flex-col gap-y-[30px] text-center ">
-          <img src="./assets/images/our-package.svg" alt="our-package icon" class="mx-auto max-w-[70px]">
-          <h5 class="text-sm text-black font-semibold xl:text-[28px] font-inter">Our Package</h5>
+          class="w-full bg-[#FFFAFA] border border-[#FFE8E8] rounded-[20px] py-5 px-2 flex flex-col gap-y-[30px] text-center anim group hover:bg-pink">
+          <img src="./assets/images/our-package.svg" alt="our-package icon"
+            class="mx-auto max-w-[70px] anim group-hover:scale-90">
+          <h5 class="text-sm text-black font-semibold xl:text-[24px] font-inter">আমাদের প্যাকেজ</h5>
         </div>
         <!-- box -->
         <!-- box -->
         <div
-          class="w-full bg-[#FFFAFA] border border-[#FFE8E8] rounded-[20px] p-5 flex flex-col gap-y-[30px] text-center">
-          <img src="./assets/images/about-us.svg" alt="about-us icon" class="mx-auto max-w-[81px]">
-          <h5 class="text-sm text-black font-semibold xl:text-[28px] font-inter">About Us</h5>
+          class="w-full bg-[#FFFAFA] border border-[#FFE8E8] rounded-[20px] py-5 px-2 flex flex-col gap-y-[30px] text-center anim group hover:bg-pink">
+          <img src="./assets/images/about-us.svg" alt="about-us icon"
+            class="mx-auto max-w-[81px] anim group-hover:scale-90">
+          <h5 class="text-sm text-black font-semibold xl:text-2xl font-inter">আমাদের সম্পর্কে </h5>
         </div>
         <!-- box -->
         <!-- box -->
         <div
-          class="w-full bg-[#FFFAFA] border border-[#FFE8E8] rounded-[20px] p-5 flex flex-col gap-y-[30px] text-center">
-          <img src="./assets/images/out-services.svg" alt="out-services icon" class="mx-auto max-w-[70px]">
-          <h5 class="text-sm text-black font-semibold xl:text-[28px] font-inter">Our Service</h5>
+          class="w-full bg-[#FFFAFA] border border-[#FFE8E8] rounded-[20px] py-5 px-2 flex flex-col gap-y-[30px] text-center anim group hover:bg-pink">
+          <img src="./assets/images/out-services.svg" alt="out-services icon"
+            class="mx-auto max-w-[70px] anim group-hover:scale-90">
+          <h5 class="text-sm text-black font-semibold xl:text-2xl font-inter">আমাদের সেবা</h5>
         </div>
         <!-- box -->
         <!-- box -->
         <div
-          class="w-full bg-[#FFFAFA] border border-[#FFE8E8] rounded-[20px] p-5 flex flex-col gap-y-[30px] text-center">
-          <img src="./assets/images/coverage-area.svg" alt="coverage-area icon" class="mx-auto max-w-[70px]">
-          <h5 class="text-sm text-black font-semibold xl:text-[28px] font-inter">Coverage Area</h5>
+          class="w-full bg-[#FFFAFA] border border-[#FFE8E8] rounded-[20px] py-5 px-2 flex flex-col gap-y-[30px] text-center anim group hover:bg-pink">
+          <img src="./assets/images/coverage-area.svg" alt="coverage-area icon"
+            class="mx-auto max-w-[70px] anim group-hover:scale-90">
+          <h5 class="text-sm text-black font-semibold xl:text-2xl font-inter">কভারেজ এলাকা</h5>
         </div>
         <!-- box -->
       </div>
@@ -293,22 +316,38 @@
     <div class="absolute left-0 top-0 w-full h-[50%] bg-pink -z-10 xl:h-[55%]"></div>
     <div class="container">
       <div class="text-center mb-5 xl:mb-[65px]">
-        <h2 class="font-semibold text-black font-rubik text-2xl uppercase xl:text-[44px]">How To Register With The
-          Network</h2>
-        <p class="common-para hidden xl:block mt-5">NR Wifi Zone delivers fast, reliable internet, keeping you connected
-          anytime, anywhere.
-          Enjoy <br> seamless online experiences with our efficient solutions for all your connectivity needs.</p>
+        <h2 class="font-semibold text-black font-rubik text-2xl uppercase xl:text-[44px]">নেটওয়ার্কে নিবন্ধন করার উপায়
+        </h2>
+        <p class="common-para hidden xl:block mt-5">NR WiFi Zone দ্রুত, নির্ভরযোগ্য ইন্টারনেট সরবরাহ করে, যা আপনাকে
+          যেকোনো সময়, যেকোনো স্থানে সংযুক্ত রাখে। <br class="hidden xl:block"> আপনার সব ধরনের সংযোগের প্রয়োজন মেটাতে
+          আমাদের কার্যকর সমাধানগুলো দিয়ে উপভোগ করুন নিরবচ্ছিন্ন অনলাইন অভিজ্ঞতা।</p>
       </div>
-      <div class="text-center relative xl:max-w-[1088px] xl:mx-auto xl:h-[568px]">
-        <img src="./assets/images/video-thumbnail.png" alt="video-thumbnail"
-          class="w-full rounded-[20px] xl:h-full object-cover">
-        <a href="#" class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 block z-30">
-          <img src="./assets/images/icons/play.svg" alt="play" class="max-w-[52px] xl:max-w-20">
-        </a>
+      <div class="text-center xl:max-w-[1088px] xl:mx-auto xl:h-[568px] relative group anim">
+        <input type="checkbox" id="toggleVideo" class="hidden peer">
+
+        <div class="peer-checked:hidden relative">
+          <img src="./assets/images/video-thumbnail.png" alt="video-thumbnail"
+            class="w-full rounded-[50px] xl:h-full object-cover border-[4px] xl:border-[10px] border-deep border-opacity-50">
+
+          <label for="toggleVideo"
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 block z-30 cursor-pointer anim group-hover:scale-125">
+            <img src="./assets/images/icons/play.svg" alt="play" class="w-9 xl:w-[100px]">
+          </label>
+        </div>
+
+        <div class="hidden peer-checked:block">
+          <iframe title="KitchenNmbrs Video"
+            class="w-full h-[490px] xl:h-[546px] rounded-[28px] border-[8px] xl:border-[15px] border-[#0F2E18] shadow-first"
+            src="https://www.youtube.com/embed/4nRaLPs8WxU?si=hxahTYP7sdL7gAKC" frameborder="0" height="490"
+            allow="autoplay; encrypted-media" allowfullscreen>
+          </iframe>
+        </div>
       </div>
+
       <div class="text-center mt-5 xl:hidden">
-        <p class="common-para">NR Wifi Zone delivers fast, reliable internet, keeping you connected anytime, anywhere.
-          Enjoy seamless online experiences with our efficient solutions for all your connectivity needs.</p>
+        <p class="common-para">NR WiFi Zone দ্রুত, নির্ভরযোগ্য ইন্টারনেট সরবরাহ করে, যা আপনাকে যেকোনো সময়, যেকোনো
+          স্থানে সংযুক্ত রাখে। আপনার সব ধরনের সংযোগের প্রয়োজন মেটাতে আমাদের কার্যকর সমাধানগুলো দিয়ে উপভোগ করুন
+          নিরবচ্ছিন্ন অনলাইন অভিজ্ঞতা।</p>
       </div>
     </div>
   </section>
@@ -318,74 +357,125 @@
   <section class="w-full py-10 xl:py-[120px]">
     <div class="container">
       <div class="text-center mb-12">
-        <h2 class="font-semibold text-black text-2xl uppercase mb-4 font-inter xl:text-[40px] xl:mb-7">Our Best and
-          popular package</h2>
-        <p class="text-[15px] font-medium text-[#848199]">No contracts. No surprise fees.</p>
+        <h2 class="font-semibold text-black text-2xl uppercase mb-4 font-inter xl:text-[40px] xl:mb-7">আমাদের সেরা ও
+          জনপ্রিয় প্যাকেজ</h2>
+        <p class="text-[15px] font-medium text-[#848199]">কোনো চুক্তি নয়, কোনো অপ্রত্যাশিত ফি নয়</p>
       </div>
       <div class="flex justify-center items-center">
         <ul class="inline-flex border border-deep rounded-full p-1.5 gap-x-2.5">
-          <li><button type="button"
-              class="text-lg font-medium text-white flex py-2 px-6 rounded-full bg-deep anim hover:bg-deep hover:text-white xl:text-2xl xl:py-[14px] xl:px-8 xl:min-w-[157px] justify-center">Hotspot</button>
+          <li><button type="button" data-target="tab1"
+              class="text-lg tab active font-medium text-deep flex py-2 px-6 rounded-full anim hover:bg-deep hover:text-white xl:text-2xl xl:py-[14px] xl:px-8 xl:min-w-[157px] justify-center">হটস্পট</button>
           </li>
-          <li><button type="button"
-              class="text-lg font-medium text-deep flex py-2 px-6 rounded-full anim hover:bg-deep hover:text-white xl:text-2xl xl:py-[14px] xl:px-8 xl:min-w-[157px] justify-center">Home</button>
+          <li><button type="button" data-target="tab2"
+              class="text-lg tab font-medium text-deep flex py-2 px-6 rounded-full anim hover:bg-deep hover:text-white xl:text-2xl xl:py-[14px] xl:px-8 xl:min-w-[157px] justify-center">হোম</button>
           </li>
         </ul>
       </div>
-      <div class="grid grid-cols-1 w-full mt-10 xl:grid-cols-4 xl:gap-x-8 gap-y-4 xl:gap-y-0">
+      <div id="tab1"
+        class="grid tab-content active grid-cols-1 w-full mt-10 xl:grid-cols-4 xl:gap-x-8 gap-y-4 xl:gap-y-0">
         <div
           class="w-full border border-deep rounded-[14px] p-[18px] flex flex-col gap-y-4 anim hover:bg-deep hover:shadow-three group">
           <div class="img">
-            <img src="./assets/images/packages/package-01.png" alt="package-01" class="w-full rounded-2xl">
+            <img src="./assets/images/packages/hotspot-package-01.png" alt="package-01" class="w-full rounded-2xl">
           </div>
           <div class="txt">
             <a href="#"
               class="flex bg-deep rounded-full py-3 px-4 text-white font-medium text-sm text-center justify-center w-5/6 mx-auto anim hover:bg-black group-hover:bg-white group-hover:text-deep">
-              Choose plan
+              প্যাকেজ ওয়ান
             </a>
           </div>
         </div>
         <div
           class="w-full border border-deep rounded-[14px] p-[18px] flex flex-col gap-y-4 anim hover:bg-deep hover:shadow-three group">
           <div class="img">
-            <img src="./assets/images/packages/package-01.png" alt="package-01" class="w-full rounded-2xl">
+            <img src="./assets/images/packages/hotspot-package-02.png" alt="package-01" class="w-full rounded-2xl">
           </div>
           <div class="txt">
             <a href="#"
               class="flex bg-deep rounded-full py-3 px-4 text-white font-medium text-sm text-center justify-center w-5/6 mx-auto anim hover:bg-black group-hover:bg-white group-hover:text-deep">
-              Choose plan
+              প্যাকেজ টু
             </a>
           </div>
         </div>
         <div
           class="w-full border border-deep rounded-[14px] p-[18px] flex flex-col gap-y-4 anim hover:bg-deep hover:shadow-three group">
           <div class="img">
-            <img src="./assets/images/packages/package-01.png" alt="package-01" class="w-full rounded-2xl">
+            <img src="./assets/images/packages/hotspot-package-03.png" alt="package-01" class="w-full rounded-2xl">
           </div>
           <div class="txt">
             <a href="#"
               class="flex bg-deep rounded-full py-3 px-4 text-white font-medium text-sm text-center justify-center w-5/6 mx-auto anim hover:bg-black group-hover:bg-white group-hover:text-deep">
-              Choose plan
+              প্যাকেজ থ্রি
             </a>
           </div>
         </div>
         <div
           class="w-full border border-deep rounded-[14px] p-[18px] flex flex-col gap-y-4 anim hover:bg-deep hover:shadow-three group">
           <div class="img">
-            <img src="./assets/images/packages/package-01.png" alt="package-01" class="w-full rounded-2xl">
+            <img src="./assets/images/packages/hotspot-package-04.png" alt="package-01" class="w-full rounded-2xl">
           </div>
           <div class="txt">
             <a href="#"
               class="flex bg-deep rounded-full py-3 px-4 text-white font-medium text-sm text-center justify-center w-5/6 mx-auto anim hover:bg-black group-hover:bg-white group-hover:text-deep">
-              Choose plan
+              প্যাকেজ ফোর
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="tab2" class="grid tab-content grid-cols-1 w-full mt-10 xl:grid-cols-4 xl:gap-x-8 gap-y-4 xl:gap-y-0">
+        <div
+          class="w-full border border-deep rounded-[14px] p-[18px] flex flex-col gap-y-4 anim hover:bg-deep hover:shadow-three group">
+          <div class="img">
+            <img src="./assets/images/packages/home-package-01.png" alt="package-01" class="w-full rounded-2xl">
+          </div>
+          <div class="txt">
+            <a href="#"
+              class="flex bg-deep rounded-full py-3 px-4 text-white font-medium text-sm text-center justify-center w-5/6 mx-auto anim hover:bg-black group-hover:bg-white group-hover:text-deep">
+              প্যাকেজ ওয়ান
+            </a>
+          </div>
+        </div>
+        <div
+          class="w-full border border-deep rounded-[14px] p-[18px] flex flex-col gap-y-4 anim hover:bg-deep hover:shadow-three group">
+          <div class="img">
+            <img src="./assets/images/packages/home-package-02.png" alt="package-01" class="w-full rounded-2xl">
+          </div>
+          <div class="txt">
+            <a href="#"
+              class="flex bg-deep rounded-full py-3 px-4 text-white font-medium text-sm text-center justify-center w-5/6 mx-auto anim hover:bg-black group-hover:bg-white group-hover:text-deep">
+              প্যাকেজ টু
+            </a>
+          </div>
+        </div>
+        <div
+          class="w-full border border-deep rounded-[14px] p-[18px] flex flex-col gap-y-4 anim hover:bg-deep hover:shadow-three group">
+          <div class="img">
+            <img src="./assets/images/packages/home-package-03.png" alt="package-01" class="w-full rounded-2xl">
+          </div>
+          <div class="txt">
+            <a href="#"
+              class="flex bg-deep rounded-full py-3 px-4 text-white font-medium text-sm text-center justify-center w-5/6 mx-auto anim hover:bg-black group-hover:bg-white group-hover:text-deep">
+              প্যাকেজ থ্রি
+            </a>
+          </div>
+        </div>
+        <div
+          class="w-full border border-deep rounded-[14px] p-[18px] flex flex-col gap-y-4 anim hover:bg-deep hover:shadow-three group">
+          <div class="img">
+            <img src="./assets/images/packages/home-package-04.png" alt="package-01" class="w-full rounded-2xl">
+          </div>
+          <div class="txt">
+            <a href="#"
+              class="flex bg-deep rounded-full py-3 px-4 text-white font-medium text-sm text-center justify-center w-5/6 mx-auto anim hover:bg-black group-hover:bg-white group-hover:text-deep">
+              প্যাকেজ ফোর
             </a>
           </div>
         </div>
       </div>
       <div class="text-center mt-10 xl:mt-14">
-        <a href="#"
-          class="text-lg font-normal text-deep font-rubik py-3 px-8 rounded-[10px] border border-deep inline-flex anim hover:bg-deep hover:text-white">Explore
-          More</a>
+        <a href="packages.html"
+          class="text-lg font-normal text-deep font-rubik py-3 px-8 rounded-[10px] border border-deep inline-flex anim hover:bg-deep hover:text-white">আরও
+          দেখুন</a>
       </div>
     </div>
   </section>
@@ -395,7 +485,7 @@
   <section class="w-full about-bg pt-14 pb-24 xl:py-20">
     <div class="container">
       <div class="text-center mb-10 xl:hidden">
-        <h2 class="font-semibold text-black text-2xl uppercase mb-4">About US</h2>
+        <h2 class="font-semibold text-black text-2xl uppercase mb-4">আমাদের সম্পর্কে</h2>
       </div>
       <div class="w-full xl:grid xl:grid-cols-2 xl:gap-x-8 xl:items-center">
         <div class="img xl:order-2">
@@ -403,32 +493,34 @@
             class="w-full xl:max-w-[640px] xl:ml-auto">
         </div>
         <div class="txt mt-5 xl:order-1 xl:mt-0">
-          <h2 class="font-semibold text-black text-2xl uppercase mb-4 xl:text-[42px] xl:mb-7">About US</h2>
-          <p class="common-para xl:text-xl">Designed for Medium and Large Enterprises, NR tech delivers lightning-fast
-            speeds,
-            unwavering reliability, 24/7 support, and everything else your business needs to stay seamlessly connected.
+          <h2 class="font-semibold text-black text-2xl uppercase mb-4 xl:text-[42px] xl:mb-7">আমাদের সম্পর্কে</h2>
+          <p class="common-para xl:text-lg xl:mr-6">মাঝারি এবং বড় উদ্যোগের জন্য ডিজাইন করা, কার্নিভাল প্রদান করে আছেটি
+            তুঙ্গ গতির ইন্টারনেট, অবিচলিত নির্ভরযোগ্যতা, ২৪/৭ সহায়তা এবং আপনার ব্যবসার সব ধরনের সংযোগের প্রয়োজনীয়তা
+            পূরণের জন্য অন্যান্য সবকিছু
           </p>
 
           <ul class="mt-8 flex flex-col gap-y-2">
             <li class="flex items-center gap-x-4 xl:border-b border-[#EBEBEB] xl:pb-2">
               <span class="block w-3.5 h-3.5 rounded-full bg-black xl:bg-deep"></span>
-              <p class="common-para !font-medium xl:!text-xl">Complete Suite of Services</p>
+              <p class="common-para !font-medium xl:!text-lg">সম্পূর্ণ সেবা প্যাকেজ</p>
             </li>
             <li class="flex items-center gap-x-4 xl:border-b border-[#EBEBEB] xl:pb-2">
               <span class="block w-3.5 h-3.5 rounded-full bg-black xl:bg-deep"></span>
-              <p class="common-para !font-medium xl:!text-xl">Reliable, secure, cost-effective</p>
+              <p class="common-para !font-medium xl:!text-lg">নির্ভরযোগ্য, নিরাপদ, খরচ-সাশ্রয়ী</p>
             </li>
             <li class="flex items-center gap-x-4 xl:border-b border-[#EBEBEB] xl:pb-2">
               <span class="block w-3.5 h-3.5 rounded-full bg-black xl:bg-deep"></span>
-              <p class="common-para !font-medium xl:!text-xl">Widest Reach: Connect Anywhere, Anytime</p>
+              <p class="common-para !font-medium xl:!text-lg">সবচেয়ে বিস্তৃত সংযোগ: যেকোনো সময়, যেকোনো স্থানে সংযুক্ত
+                হোন</p>
             </li>
           </ul>
         </div>
       </div>
       <div class="mt-10 text-center xl:mt-0 xl:text-start xl:relative xl:-top-14">
         <a href="#"
-          class="inline-flex items-center gap-x-6 bg-first text-white py-3 px-4 text-xl font-semibold anim hover:bg-dark rounded-lg xl:text-2xl xl:py-[15px] xl:px-[30px]">Contact
-          Now <img src="./assets/images/icons/wifi-signal.svg" alt="signal icon" class="max-w-4 xl:max-w-8"></a>
+          class="inline-flex anim group items-center gap-x-6 bg-first text-white py-3 px-4 text-xl font-semibold anim hover:bg-dark rounded-lg xl:text-2xl xl:py-[15px] xl:px-[30px]">এখনই
+          যোগাযোগ করুন <img src="./assets/images/icons/wifi-signal.svg" alt="signal icon"
+            class="max-w-4 xl:max-w-8 group-hover:translate-x-1 anim"></a>
       </div>
     </div>
   </section>
@@ -439,17 +531,16 @@
     <div class="container">
       <div
         class="text-center bg-pink-2 rounded-lg py-6 px-2 pb-14 xl:max-w-[1088px] xl:mx-auto xl:py-[56px] xl:px-[120px] xl:pb-[120px]">
-        <h2 class="text-black text-base font-normal xl:text-2xl">Have you any Questions</h2>
-        <h3 class="text-black font-medium text-[22px] my-2.5 xl:text-4xl">Would You Like to Learn More? </h3>
-        <p class="common-para xl:!text-base">At NR Tech customer care is our top oriority. Our dedicated support team is
-          avallable 24/7 tc At NR Tech
-          customer care is our top oriority. Our dedicated customer care is our top.</p>
+        <h2 class="text-black text-base font-normal xl:text-2xl">আপনার কোনো প্রশ্ন আছে?</h2>
+        <h3 class="text-black font-medium text-[22px] my-2.5 xl:text-4xl">আপনি কি আরও জানতে চান? </h3>
+        <p class="common-para xl:!text-base">NR Tech-এ গ্রাহক সেবা আমাদের সর্বোচ্চ অগ্রাধিকার আমাদের নিবেদিত <br
+            class="hidden xl:block"> সহায়ক দল ২৪/৭ আপনার সেবায় প্রস্তুত।</p>
         <img src="./assets/images/get-bg-dots.svg" alt="get bg dots icon" class="w-full  xl:hidden">
       </div>
       <div class="text-center bg-white p-6 rounded-[14px] shadow-second w-[70%] mx-auto -mt-16 xl:max-w-[254px]">
         <img src="./assets/images/icons/call.svg" alt="icon for call" class="mx-auto">
-        <h4 class="font-medium text-xl text-black mt-5">Let’s Talk</h4>
-        <h5 class="font-light text-xl text-black mt-2">Get a call</h5>
+        <h4 class="font-medium text-xl text-black mt-5">চলুন কথা বলি</h4>
+        <a href="#" class="font-light text-xl text-deep mt-2 underline">কল করুন</a>
       </div>
     </div>
   </section>
@@ -463,8 +554,8 @@
           <a href="#" class="block">
             <img src="./assets/images/logo.svg" alt="logo" class="mx-auto max-w-[89px] xl:max-w-[169px] xl:mx-0">
           </a>
-          <p class="common-para mt-2.5 mb-5 xl:mt-[30px]"><strong>NR Wifi Zone</strong> is a private virtual network
-            that has <br> unique features and has high security.</p>
+          <p class="common-para mt-2.5 mb-5 xl:mt-[30px]"><strong>NR Wifi Zone</strong> একটি প্রাইভেট ভার্চুয়াল
+            নেটওয়ার্ক যা <br class="hidden xl:block"> ২০২৪ সাল থেকে বগুড়ায় কাজ করছে</p>
 
           <ul class="flex items-center justify-center gap-x-0 xl:justify-start">
             <li>
@@ -486,36 +577,37 @@
         </div>
         <div class="w-full mt-10 xl:col-span-7 gap-y-6 xl:gap-y-0 grid grid-cols-2 xl:grid-cols-3 xl:gap-x-4">
           <div class="w-full">
-            <h6 class="text-lg font-medium text-[#0B132A] mb-3 xl:mb-5">Quick Link</h6>
+            <h6 class="text-lg font-medium text-[#0B132A] mb-3 xl:mb-5">মেনু </h6>
             <ul class="flex flex-col justify-start items-start xl:gap-y-2.5">
-              <li><a href="#" class="block common-para">Home</a></li>
-              <li><a href="#" class="block common-para">About US</a></li>
-              <li><a href="#" class="block common-para">Package</a></li>
-              <li><a href="#" class="block common-para">Coverage list</a></li>
+              <li><a href="index.html" class="block common-para">হোম</a></li>
+              <li><a href="packages.html" class="block common-para">প্যাকেজ</a></li>
+              <li><a href="contact.html" class="block common-para"> যোগাযোগ করুন</a></li>
             </ul>
           </div>
           <div class="w-full xl:mt-0">
-            <h6 class="text-lg font-medium text-[#0B132A] mb-3 xl:mb-5">Services</h6>
+            <h6 class="text-lg font-medium text-[#0B132A] mb-3 xl:mb-5">সেবা</h6>
             <ul class="flex flex-col justify-start items-start xl:gap-y-2.5">
-              <li><a href="#" class="block common-para">FTP Server</a></li>
-              <li><a href="#" class="block common-para">Live TV</a></li>
-              <li><a href="#" class="block common-para">Broadband</a></li>
-              <li><a href="#" class="block common-para">Hotspot</a></li>
+              <li><a href="ftp-list.html" class="block common-para">FTP সার্ভার</a></li>
+              <li><a href="ftp-list.html" class="block common-para">লাইভ TV</a></li>
+              <li><a href="#" class="block common-para">ব্রডব্যান্ড</a></li>
+              <li><a href="#" class="block common-para">হটস্পট</a></li>
             </ul>
           </div>
           <div class="w-full col-span-2 xl:col-span-1">
-            <h6 class="text-lg font-medium text-[#0B132A] mb-3 xl:mb-5">Address</h6>
+            <h6 class="text-lg font-medium text-[#0B132A] mb-3 xl:mb-5">আমাদের ঠিকানা</h6>
             <ul class="flex flex-col justify-start items-start xl:gap-y-2.5">
-              <li><a href="#" class="block common-para">Bisich,Bogura Sadar, Bogra-5800</a></li>
+              <li><a href="#" class="block common-para">বিসিক,বগুড়া সদর, বগুড়া-৫৮০০</a></li>
               <li><a href="#" class="block common-para">support@nrtech.com.bd</a></li>
-              <li><a href="#" class="block common-para">+8801745-851246( WhatsApp )</a></li>
-              <li><a href="#" class="block common-para">09585 652 652</a></li>
+              <li><a href="#" class="block common-para">০১৭৪৫-৮৫১২৪৬(হোয়াটস্যাপ)</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="text-center border-t border-[#ECECEB] pt-6 mt-6">
-        <p class="text-[#a1acbf] font-normal text-xs">NR TECH - &copy; 2025 All Copy Rights Reserved</p>
+      <div
+        class="text-center border-t border-[#ECECEB] pt-6 mt-6 flex flex-col justify-center gap-y-2 xl:flex-row xl:justify-between xl:items-center">
+        <p class="text-[#a1acbf] font-normal text-xs">NR TECH - &copy; All right reserved 2025</p>
+        <p class="text-[#a1acbf] font-normal text-xs">Made with ❤️ by <a href="https://github.com/Akram-hossain"
+            target="_blank" class="text-deep">Akram</a></p>
       </div>
     </div>
   </footer>

@@ -46,6 +46,10 @@ Theme Primary Font Family: "Inter", serif;
         @apply text-sm font-normal text-black;
     }
 
+    .menu.active{
+        @apply bg-deep text-white rounded-md anim hover:text-deep
+    }
+
 }
 
 .anim {
@@ -68,6 +72,40 @@ Theme Primary Font Family: "Inter", serif;
 .submit-bttn{
     background: linear-gradient(0deg, #25CF43 0%, #61FD7D 100%);
 
+}
+
+.tab.active {
+    @apply !bg-deep !text-white
+}
+
+.tab-content {
+    display: none; 
+}
+.tab-content.active {
+    display: grid;
+}
+
+
+/* custom scrollbar css */
+.whatsapp-bttn {
+    background: linear-gradient(90deg, #25d366, #075e54, #25d366);
+    background-size: 300% 100%;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    animation: GradientMove 5s infinite ease-in-out;
+    box-shadow: inset 0 0 10px rgba(37, 211, 102, 0.8);
+}
+
+@keyframes GradientMove {
+    0% {
+        background-position: 100% 0;
+    }
+    50% {
+        background-position: 0% 0;
+    }
+    100% {
+        background-position: 100% 0;
+    }
 }
 
 /* custom responsive css */
