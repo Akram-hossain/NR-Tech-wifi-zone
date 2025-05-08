@@ -5,8 +5,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         index: './index.html',
-        contact: './contact.html',
-        ftplist: './ftp-list.html',
+        contact: './contact.html', 
         packages: './packages.html',
         services: './services.html', 
       },
