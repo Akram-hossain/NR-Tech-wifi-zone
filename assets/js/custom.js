@@ -37,16 +37,22 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // active menu
-    const currentPath = window.location.pathname.replace(/\/$/, ''); // Remove trailing slash
-    const links = document.querySelectorAll('#mainMenu li a');
+    // dropdown
+    const menuButton = document.getElementById('menu-button');
+    const dropdownMenu = document.getElementById('dropdown-menu');
 
-    links.forEach(link => {
-        const linkPath = link.getAttribute('href').replace(/\/$/, '');
-        // alert(linkPath);
-        console.log({ linkPath, currentPath });
-        if (linkPath == currentPath || (linkPath == '' && currentPath == '')) {
-            link.classList.add('active'); // 🔴 Your active classes
+    // Toggle the dropdown menu visibility when the button is clicked
+    menuButton.addEventListener('click', () => {
+        const isExpanded = menuButton.getAttribute('aria-expanded') === 'true';
+        menuButton.setAttribute('aria-expanded', !isExpanded);
+        dropdownMenu.classList.toggle('hidden', isExpanded);
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    document.addEventListener('click', (event) => {
+        if (!dropdownMenu.contains(event.target) && !menuButton.contains(event.target)) {
+            dropdownMenu.classList.add('hidden');
+            menuButton.setAttribute('aria-expanded', 'false');
         }
     });
 

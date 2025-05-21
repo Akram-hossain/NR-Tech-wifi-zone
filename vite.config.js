@@ -1,8 +1,6 @@
-import { defineConfig } from 'vite';
-import injectHTML from 'vite-plugin-html-inject';
+import { defineConfig } from 'vite'; 
 
-export default defineConfig({
-  plugins: [injectHTML()],
+export default defineConfig({ 
   build: {
     rollupOptions: {
       input: {
