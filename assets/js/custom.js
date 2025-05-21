@@ -14,4 +14,16 @@ document.addEventListener('DOMContentLoaded', () => {
             target.classList.add('active');
         });
     });
+
+    const btn = document.getElementById('backToTop');
+
+    // Show button after scrolling down
+    window.addEventListener('scroll', () => {
+        btn.classList.toggle('hidden', window.scrollY < 300);
+    });
+
+    // Smooth scroll to top on click
+    btn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
 });
