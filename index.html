@@ -36,6 +36,7 @@
 
   <!-- tailwind CSS start -->
   <link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/x-icon">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -121,8 +122,7 @@
               <button type="button"
                 class="inline-flex w-full justify-center uppercase items-center gap-x-1.5 rounded-md text-sm font-medium text-white"
                 id="menu-button" aria-expanded="false" aria-haspopup="true">
-                <img src="./assets/images/flags/bn.webp" alt="Flag"
-                  class="max-w-5">
+                <img src="./assets/images/flags/bn.webp" alt="Flag" class="max-w-5">
                 BN
                 <svg class="-mr-1 size-5 text-gray-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"
                   data-slot="icon">
@@ -285,32 +285,98 @@
   <!-- header section end -->
 
   <!-- hero section start -->
-  <section class="hero-section bg-pink py-16">
-    <div class="container">
-      <div class="w-full xl:grid xl:items-center xl:grid-cols-2">
-        <div class="w-full">
-          <p class="text-black font-medium text-lg italic font-rubik xl:text-4xl">অভিজ্ঞতা নিন</p>
-          <h1
-            class="text-[32px] font-bold font-rubik italic gradient-text-color uppercase xl:text-5xl xl:leading-[130%] xl:my-1">
-            সুপারফাস্ট ইন্টারনেটের</h1>
-          <div class="text-end xl:text-start">
-            <h5
-              class="text-[22px] font-inter font-bold text-end gradient-bg-one rounded-xl inline-block px-3 py-0.5 xl:text-4xl xl:py-1">
-              <span class="font-medium">এবং</span> একসঙ্গে উপভোগ করুন
-            </h5>
+
+  <div class="mySwiper relative">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <section class="hero-section bg-pink py-16">
+          <div class="container">
+            <div class="w-full xl:grid xl:items-center xl:grid-cols-2">
+              <div class="w-full">
+                <p class="text-black font-medium text-lg italic font-rubik xl:text-4xl">অভিজ্ঞতা নিন</p>
+                <h1
+                  class="text-[32px] font-bold font-rubik italic gradient-text-color uppercase xl:text-5xl xl:leading-[130%] xl:my-1">
+                  হাই-স্পিড ইন্টারনেটের</h1>
+                <div class="text-end xl:text-start">
+                  <h5
+                    class="text-[22px] font-inter font-bold text-end gradient-bg-one rounded-xl inline-block px-3 py-0.5 xl:text-3xl xl:py-1">
+                    <span class="font-medium">এবং</span> নিরবচ্ছিন্ন সংযোগ উপভোগ করুন
+                  </h5>
+                </div>
+              </div>
+              <div class="my-14 xl:my-0">
+                <img src="./assets/images/hero-slides/hero-slider-1.png" alt="hero-slider-one" class="w-full xl:max-w-[580px]">
+              </div>
+            </div>
+            <div class="text-center mt-20 xl:mt-0 xl:text-start xl:relative xl:-top-20">
+              <a href="https://api.whatsapp.com/send?phone=8801811813192" target="_blank"
+                class="inline-flex items-center gap-x-6 bg-first text-white py-3 px-4 text-xl font-semibold anim hover:bg-dark rounded-lg xl:text-2xl xl:py-5 xl:px-[30px]">সংযোগ
+                নিন <img src="./assets/images/icons/wifi-signal.svg" alt="signal icon" class="max-w-4 xl:max-w-8"></a>
+            </div>
           </div>
-        </div>
-        <div class="my-14 xl:my-0">
-          <img src="./assets/images/hero-slides/hero-slider-one.svg" alt="hero-slider-one" class="w-full">
-        </div>
+        </section>
       </div>
-      <div class="text-center mt-20 xl:mt-0 xl:text-start xl:relative xl:-top-28">
-        <a href="https://api.whatsapp.com/send?phone=8801811813192" target="_blank"
-          class="inline-flex items-center gap-x-6 bg-first text-white py-3 px-4 text-xl font-semibold anim hover:bg-dark rounded-lg xl:text-2xl xl:py-5 xl:px-[30px]">সংযোগ
-          নিন <img src="./assets/images/icons/wifi-signal.svg" alt="signal icon" class="max-w-4 xl:max-w-8"></a>
+      <div class="swiper-slide">
+        <section class="hero-section bg-[#F6F6F6] py-16">
+          <div class="container">
+            <div class="w-full xl:grid xl:items-center xl:grid-cols-2">
+              <div class="w-full">
+                <p class="text-black font-medium text-lg italic font-rubik xl:text-4xl">অভিজ্ঞতা নিন</p>
+                <h1
+                  class="text-[32px] font-bold font-rubik italic gradient-text-color uppercase xl:text-5xl xl:leading-[130%] xl:my-1">
+                  লাইটনিং ফাস্ট ইন্টারনেটের</h1>
+                <div class="text-end xl:text-start">
+                  <h5
+                    class="text-[22px] font-inter font-bold text-end gradient-bg-one rounded-xl inline-block px-3 py-0.5 xl:text-3xl xl:py-1">
+                    <span class="font-medium">এবং</span> দ্রুততম স্ট্রিমিং উপভোগ করুন
+                  </h5>
+                </div>
+              </div>
+              <div class="my-14 xl:my-0">
+                <img src="./assets/images/hero-slides/hero-slider-2.png" alt="hero-slider-one" class="w-full xl:max-w-[500px]">
+              </div>
+            </div>
+            <div class="text-center mt-20 xl:mt-0 xl:text-start xl:relative xl:-top-20">
+              <a href="https://api.whatsapp.com/send?phone=8801811813192" target="_blank"
+                class="inline-flex items-center gap-x-6 bg-first text-white py-3 px-4 text-xl font-semibold anim hover:bg-dark rounded-lg xl:text-2xl xl:py-5 xl:px-[30px]">সংযোগ
+                নিন <img src="./assets/images/icons/wifi-signal.svg" alt="signal icon" class="max-w-4 xl:max-w-8"></a>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="swiper-slide">
+        <section class="hero-section bg-[#E7FFEF] py-16">
+          <div class="container">
+            <div class="w-full xl:grid xl:items-center xl:grid-cols-2">
+              <div class="w-full">
+                <p class="text-black font-medium text-lg italic font-rubik xl:text-4xl">অভিজ্ঞতা নিন</p>
+                <h1
+                  class="text-[32px] font-bold font-rubik italic gradient-text-color uppercase xl:text-5xl xl:leading-[130%] xl:my-1">
+                  অতুলনীয় ইন্টারনেট গতির</h1>
+                <div class="text-end xl:text-start">
+                  <h5
+                    class="text-[22px] font-inter font-bold text-end gradient-bg-one rounded-xl inline-block px-3 py-0.5 xl:text-3xl xl:py-1">
+                    <span class="font-medium">এবং</span> সীমাহীন সুযোগ উপভোগ করুন
+                  </h5>
+                </div>
+              </div>
+              <div class="my-14 xl:my-0">
+                <img src="./assets/images/hero-slides/hero-slider-3.png" alt="hero-slider-one" class="w-full xl:max-w-[405px]">
+              </div>
+            </div>
+            <div class="text-center mt-20 xl:mt-0 xl:text-start xl:relative xl:-top-20">
+              <a href="https://api.whatsapp.com/send?phone=8801811813192" target="_blank"
+                class="inline-flex items-center gap-x-6 bg-first text-white py-3 px-4 text-xl font-semibold anim hover:bg-dark rounded-lg xl:text-2xl xl:py-5 xl:px-[30px]">সংযোগ
+                নিন <img src="./assets/images/icons/wifi-signal.svg" alt="signal icon" class="max-w-4 xl:max-w-8"></a>
+            </div>
+          </div>
+        </section>
       </div>
     </div>
-  </section>
+    <div class="swiper-paginations hidden xl:block absolute z-[99] xl:!left-1/2 w-full"></div>
+  </div>
+
+
   <!-- hero section end -->
 
   <!-- feature section start -->
@@ -469,7 +535,7 @@
         <div
           class="w-full border border-deep rounded-[14px] p-[18px] flex flex-col gap-y-4 anim hover:bg-deep hover:shadow-three group">
           <div class="img">
-            <img src="./assets/images/packages/home-package-00.webp" alt="package-01" class="w-full rounded-2xl">
+            <img src="./assets/images/packages/home-package-00.png" alt="package-01" class="w-full rounded-2xl">
           </div>
           <div class="txt">
             <a href="#"
@@ -665,6 +731,34 @@
     </div>
   </footer>
   <!-- footer end -->
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      // Optional parameters
+      loop: true, // Enable continuous loop 
+      autoplay: {
+        delay: 5000, 
+      },
+      speed : 1000,
+      // Enable pagination
+      pagination: {
+        el: '.swiper-paginations',
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1, 
+        },
+        768: {
+          slidesPerView: 1, 
+        },
+        1024: {
+          slidesPerView: 1, 
+        },
+      }, 
+    });
+  </script>
 
 
   <script src="./assets/js/menu-toggle.js" type="module"></script>
