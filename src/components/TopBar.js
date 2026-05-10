@@ -14,11 +14,11 @@ export default function TopBar() {
           <span className="opacity-30">|</span>
           <span className="opacity-80">{t.tagline}</span>
           <a
-            href="tel:01811813192"
+            href="tel:01901640268"
             className="flex items-center gap-1.5 opacity-80 hover:opacity-100 hover:text-brand transition"
           >
             <Phone className="h-3 w-3" />
-            <span className="num-en">01811-813192</span>
+            <span className="num-en">01901-640268</span>
           </a>
           <a
             href="mailto:nrwifizone@gmail.com"

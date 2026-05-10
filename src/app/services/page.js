@@ -20,7 +20,7 @@ export default function ServicesPage() {
     { icon: Gamepad2, title: t.services.s6Title, desc: t.services.s6Desc, tone: "from-rose-500 to-pink-600" },
   ];
 
-  const bkash = "01811-813192";
+  const bkash = "01886-897592";
 
   const copyBkash = async () => {
     try {

@@ -21,17 +21,20 @@ export default function ContactPage() {
       icon: MessageCircle,
       title: t.contact.whatsapp,
       desc: t.contact.whatsappDesc,
-      cta: t.contact.whatsappBtn,
+      cta: "01811-813192",
       href: "https://wa.me/8801811813192?text=Hello",
       external: true,
       tone: "from-emerald-500 to-green-600",
+      mono: true,
     },
     {
       icon: Phone,
       title: t.contact.callTitle,
       desc: t.contact.callDesc,
-      cta: "01811-813192",
-      href: "tel:01811813192",
+      cta: "01901-640268",
+      sub: "01901-640267",
+      href: "tel:01901640268",
+      hrefSub: "tel:01901640267",
       tone: "from-brand to-orange-500",
       mono: true,
     },
@@ -49,7 +52,7 @@ export default function ContactPage() {
       title: t.contact.addressTitle,
       desc: t.contact.addressDesc,
       cta: lang === "bn" ? "ম্যাপে দেখুন" : "View on map",
-      href: "https://maps.google.com/?q=Matidali,Bogura",
+      href: "https://maps.google.com/?q=BSCIC+Industrial+Area+Bogura",
       external: true,
       tone: "from-fuchsia-500 to-purple-600",
     },
@@ -90,6 +93,11 @@ export default function ContactPage() {
                   {c.cta}
                   <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </div>
+                {c.sub && (
+                  <div className={`mt-1 text-xs font-medium text-soft ${c.mono ? "num-en" : ""}`}>
+                    {c.sub}
+                  </div>
+                )}
               </motion.a>
             ))}
           </div>
@@ -162,24 +170,21 @@ export default function ContactPage() {
                   </div>
                   <h3 className="text-xl md:text-2xl font-bold text-app">{t.contact.coverageSub}</h3>
 
-                  <ul className="mt-5 space-y-2.5">
+                  <ul className="mt-5 grid grid-cols-2 gap-2">
                     {t.contact.areas.map((area, i) => (
-                      <li key={i} className="flex items-center gap-3 px-4 py-3 rounded-xl surface-2 border border-app">
-                        <span className="relative inline-flex h-2.5 w-2.5">
+                      <li key={i} className="flex items-center gap-2 px-3 py-2 rounded-lg surface-2 border border-app">
+                        <span className="relative inline-flex h-2 w-2 shrink-0">
                           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-                          <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
+                          <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
                         </span>
-                        <span className="font-semibold text-app">{area}</span>
-                        <span className="ml-auto text-xs text-emerald-500 font-bold">
-                          {lang === "bn" ? "সক্রিয়" : "Active"}
-                        </span>
+                        <span className="font-semibold text-app text-xs md:text-sm truncate">{area}</span>
                       </li>
                     ))}
                   </ul>
 
                   <div className="mt-6 rounded-2xl overflow-hidden border border-app">
                     <iframe
-                      src="https://maps.google.com/maps?q=Matidali%20Bogura&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                      src="https://maps.google.com/maps?q=BSCIC%20Industrial%20Area%20Bogura&t=&z=14&ie=UTF8&iwloc=&output=embed"
                       className="w-full h-56 border-0"
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"

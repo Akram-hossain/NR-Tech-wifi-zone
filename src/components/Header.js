@@ -85,7 +85,7 @@ export default function Header() {
               <LangToggle className="hidden sm:inline-flex" />
               <ThemeToggle />
               <Link
-                href="https://billing.nrtechbd.net"
+                href="http://103.110.217.214/"
                 target="_blank"
                 className="hidden sm:inline-flex btn-primary !py-2 !px-5 !text-sm"
               >
@@ -156,7 +156,7 @@ export default function Header() {
             </div>
 
             <Link
-              href="https://billing.nrtechbd.net"
+              href="http://103.110.217.214/"
               target="_blank"
               className="btn-primary w-full mt-4 !py-3.5"
             >
@@ -167,8 +167,14 @@ export default function Header() {
           <div className="p-5 border-t border-app">
             <p className="text-xs text-soft mb-3">{t.tagline}</p>
             <div className="space-y-2 text-sm">
-              <a href="tel:01811813192" className="flex items-center gap-2 text-app hover:text-brand">
-                <span className="num-en">📞 01811-813192</span>
+              <a href="tel:01901640268" className="flex items-center gap-2 text-app hover:text-brand">
+                <span className="num-en">📞 01901-640268</span>
+              </a>
+              <a href="tel:01901640267" className="flex items-center gap-2 text-app hover:text-brand">
+                <span className="num-en">📞 01901-640267</span>
+              </a>
+              <a href="https://wa.me/8801811813192" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-app hover:text-brand">
+                <span className="num-en">💬 01811-813192 (WhatsApp)</span>
               </a>
               <a href="mailto:nrwifizone@gmail.com" className="flex items-center gap-2 text-app hover:text-brand">
                 <span className="num-en">✉️ nrwifizone@gmail.com</span>

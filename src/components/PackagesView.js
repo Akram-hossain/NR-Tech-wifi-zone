@@ -41,11 +41,7 @@ export default function PackagesView() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
-              className={`grid gap-6 md:gap-7 ${
-                tab === "home"
-                  ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto pt-4"
-                  : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 max-w-6xl mx-auto pt-4"
-              }`}
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-7 max-w-6xl mx-auto pt-4"
             >
               {data.map((pkg, i) => (
                 <PackageCard key={pkg.id} pkg={pkg} kind={tab} index={i} />

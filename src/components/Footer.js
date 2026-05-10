@@ -92,11 +92,30 @@ export default function Footer() {
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-2.5 text-soft">
                 <MapPin className="h-4 w-4 text-brand mt-0.5 shrink-0" />
-                <span>{lang === "bn" ? "মাটিডালি, বগুড়া সদর, বগুড়া" : "Matidali, Bogura Sadar, Bogura"}</span>
+                <span>{lang === "bn" ? "বিসিক, বগুড়া সদর, বগুড়া" : "BSCIC, Bogura Sadar, Bogura"}</span>
               </li>
               <li>
-                <a href="tel:01811813192" className="flex items-center gap-2.5 text-soft hover:text-brand transition">
+                <a href="tel:01901640268" className="flex items-center gap-2.5 text-soft hover:text-brand transition">
                   <Phone className="h-4 w-4 text-brand shrink-0" />
+                  <span className="num-en">01901-640268</span>
+                </a>
+              </li>
+              <li>
+                <a href="tel:01901640267" className="flex items-center gap-2.5 text-soft hover:text-brand transition">
+                  <Phone className="h-4 w-4 text-brand shrink-0" />
+                  <span className="num-en">01901-640267</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://wa.me/8801811813192"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2.5 text-soft hover:text-brand transition"
+                >
+                  <svg viewBox="0 0 24 24" className="h-4 w-4 text-brand shrink-0" fill="currentColor">
+                    <path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981z" />
+                  </svg>
                   <span className="num-en">01811-813192</span>
                 </a>
               </li>

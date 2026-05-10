@@ -41,11 +41,11 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.05 }}
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.05]"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-[1.3]"
             >
-              <span className="block text-app">{t.hero.title1}</span>
-              <span className="block gradient-text">{t.hero.title2}</span>
-              <span className="block text-app text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-3 font-bold">
+              <span className="block text-app pb-1">{t.hero.title1}</span>
+              <span className="block gradient-text pb-2">{t.hero.title2}</span>
+              <span className="block text-app text-2xl sm:text-3xl md:text-4xl lg:text-5xl mt-3 font-bold pb-1">
                 {t.hero.title3}
               </span>
             </motion.h1>

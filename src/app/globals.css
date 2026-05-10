@@ -143,6 +143,16 @@
     background-clip: text;
     color: transparent;
     animation: shine 3s linear infinite;
+    /* Bangla descenders need breathing room or bg-clip:text crops them */
+    line-height: 1.3;
+    padding-bottom: 0.15em;
+  }
+
+  [data-lang="bn"] .heading,
+  [data-lang="bn"] h1,
+  [data-lang="bn"] h2,
+  [data-lang="bn"] h3 {
+    line-height: 1.3;
   }
 
   .ring-brand {

@@ -8,7 +8,7 @@ import { useI18n } from "@/lib/i18n-context";
 export default function CoverageStrip() {
   const { t } = useI18n();
 
-  const areas = [t.coverage.area1, t.coverage.area2, t.coverage.area3, t.coverage.area4];
+  const areas = t.coverage.areas;
 
   return (
     <section className="section relative">
@@ -33,21 +33,21 @@ export default function CoverageStrip() {
               </Link>
             </div>
 
-            <div className="grid grid-cols-2 gap-3 md:gap-4">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5 md:gap-3">
               {areas.map((area, i) => (
                 <motion.div
                   key={area}
                   initial={{ opacity: 0, scale: 0.85 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: i * 0.08 }}
-                  className="group relative card p-5 text-center hover:border-brand transition"
+                  transition={{ duration: 0.35, delay: i * 0.05 }}
+                  className="group relative card px-3 py-3 text-center hover:border-brand transition"
                 >
-                  <div className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-brand/10 text-brand mb-2 group-hover:bg-brand group-hover:text-white transition">
-                    <MapPin className="h-5 w-5" />
+                  <div className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-brand/10 text-brand mb-1.5 group-hover:bg-brand group-hover:text-white transition">
+                    <MapPin className="h-4 w-4" />
                   </div>
-                  <p className="font-semibold text-app text-sm md:text-base">{area}</p>
-                  <span className="absolute top-2 right-2 inline-flex h-2 w-2">
+                  <p className="font-semibold text-app text-xs md:text-sm leading-tight">{area}</p>
+                  <span className="absolute top-1.5 right-1.5 inline-flex h-2 w-2">
                     <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
                     <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
                   </span>

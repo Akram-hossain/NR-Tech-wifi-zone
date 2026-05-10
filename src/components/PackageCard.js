@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Check, Zap, Wifi } from "lucide-react";
+import { Check, Zap, Wifi, PhoneCall } from "lucide-react";
 import { useI18n } from "@/lib/i18n-context";
 import { perkLabels } from "@/lib/packages-data";
 
@@ -12,11 +12,25 @@ export default function PackageCard({ pkg, kind, index }) {
   const featured = isPopular;
 
   const name = lang === "bn" ? pkg.nameBn : pkg.nameEn;
-  const speed = kind === "home" ? pkg.speedLabel : lang === "bn" ? pkg.speedBn : pkg.speed;
   const perks = pkg.perks.map((p) => perkLabels[lang][p]);
 
-  const durationLabel = kind === "hotspot" ? (lang === "bn" ? "মেয়াদ" : "Validity") : t.perMonth;
-  const priceUnit = kind === "hotspot" ? "" : t.bdtMonth;
+  // The headline spec shown as a big highlight badge
+  const bnDigits = (n) => String(n).replace(/\d/g, (d) => "০১২৩৪৫৬৭৮৯"[d]);
+  const headlineSpec =
+    kind === "home"
+      ? pkg.speedLabel
+      : lang === "bn"
+      ? `${bnDigits(pkg.duration)} দিন`
+      : `${pkg.duration} ${pkg.duration === 1 ? "Day" : "Days"}`;
+
+  const priceFootnote =
+    kind === "home"
+      ? lang === "bn"
+        ? "/মাস"
+        : "/month"
+      : lang === "bn"
+      ? `${bnDigits(pkg.duration)} দিনের জন্য`
+      : `for ${pkg.duration} ${pkg.duration === 1 ? "day" : "days"}`;
 
   return (
     <motion.div
@@ -58,36 +72,42 @@ export default function PackageCard({ pkg, kind, index }) {
         />
 
         <div className="relative">
-          {/* Plan name + icon */}
-          <div className="flex items-center gap-3 mb-4">
-            <div
-              className={`h-11 w-11 rounded-2xl grid place-items-center ${
-                featured ? "bg-white/15" : "bg-brand-soft text-brand"
-              }`}
-            >
-              <Wifi className={`h-5 w-5 ${featured ? "text-white" : ""}`} />
-            </div>
-            <div>
-              <h3 className={`text-lg font-bold leading-tight ${featured ? "text-white" : "text-app"}`}>
+          {/* Plan name + spec badge */}
+          <div className="flex items-start justify-between gap-3 mb-4">
+            <div className="flex items-center gap-3 min-w-0">
+              <div
+                className={`h-11 w-11 shrink-0 rounded-2xl grid place-items-center ${
+                  featured ? "bg-white/15" : "bg-brand-soft text-brand"
+                }`}
+              >
+                <Wifi className={`h-5 w-5 ${featured ? "text-white" : ""}`} />
+              </div>
+              <h3 className={`text-base font-bold leading-tight truncate ${featured ? "text-white" : "text-app"}`}>
                 {name}
               </h3>
-              <p className={`text-xs ${featured ? "text-white/70" : "text-soft"}`}>{speed}</p>
+            </div>
+            <div
+              className={`shrink-0 inline-flex items-center px-2.5 py-1 rounded-lg text-[11px] font-extrabold tracking-tight num-en whitespace-nowrap ${
+                featured
+                  ? "bg-white/20 text-white"
+                  : "bg-brand text-white shadow-glow"
+              }`}
+            >
+              {headlineSpec}
             </div>
           </div>
 
           {/* Price */}
           <div className="mt-5 mb-6">
             <div className="flex items-baseline gap-1">
-              <span className={`text-xs font-bold ${featured ? "text-white/70" : "text-soft"}`}>৳</span>
+              <span className={`text-xl font-bold ${featured ? "text-white/80" : "text-soft"}`}>৳</span>
               <span className={`text-5xl md:text-6xl font-extrabold tracking-tight num-en ${featured ? "text-white" : "text-app"}`}>
                 {pkg.price}
               </span>
+              <span className={`text-sm font-semibold self-end pb-2 ${featured ? "text-white/70" : "text-muted"}`}>
+                {priceFootnote}
+              </span>
             </div>
-            <p className={`text-xs mt-1 ${featured ? "text-white/70" : "text-muted"}`}>
-              {kind === "hotspot"
-                ? `${durationLabel}: ${name}`
-                : `${priceUnit}`}
-            </p>
           </div>
 
           {/* Divider */}
@@ -95,6 +115,22 @@ export default function PackageCard({ pkg, kind, index }) {
 
           {/* Perks */}
           <ul className="space-y-2.5 mb-7">
+            {kind === "home" && pkg.freeMinutes ? (
+              <li className="flex items-start gap-2.5">
+                <span
+                  className={`inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full ${
+                    featured ? "bg-yellow-300/30 text-yellow-200" : "bg-amber-400/20 text-amber-500"
+                  }`}
+                >
+                  <PhoneCall className="h-3 w-3" strokeWidth={3} />
+                </span>
+                <span className={`text-sm font-bold ${featured ? "text-yellow-200" : "text-amber-600 dark:text-amber-400"}`}>
+                  {lang === "bn"
+                    ? `${bnDigits(pkg.freeMinutes)} ফ্রি মিনিট`
+                    : `${pkg.freeMinutes} Free Minutes`}
+                </span>
+              </li>
+            ) : null}
             {perks.map((perk) => (
               <li key={perk} className="flex items-start gap-2.5">
                 <span

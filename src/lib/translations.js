@@ -27,7 +27,7 @@ export const translations = {
     // Top bar
     top: {
       welcome: "ওয়াইফাই জোন আপনাকে স্বাগতম",
-      phone: "০১৮১১-৮১৩১৯২",
+      phone: "০১৯০১-৬৪০২৬৮",
       email: "nrwifizone@gmail.com",
     },
 
@@ -40,7 +40,7 @@ export const translations = {
       sub: "ফাইবার অপটিক প্রযুক্তিতে ব্লেজিং-ফাস্ট স্পিড, ৯৯.৯% আপটাইম এবং ২৪/৭ গ্রাহক সহায়তা — সবকিছু এক প্যাকেজে।",
       cta1: "এখনই সংযোগ নিন",
       cta2: "প্যাকেজ দেখুন",
-      stat1: "১০ হাজার+",
+      stat1: "১০০০+",
       stat1Label: "সন্তুষ্ট গ্রাহক",
       stat2: "৯৯.৯%",
       stat2Label: "আপটাইম গ্যারান্টি",
@@ -97,18 +97,25 @@ export const translations = {
     // Home — Coverage strip
     coverage: {
       title: "আমাদের কভারেজ এলাকা",
-      sub: "বগুড়া সদর — মাটিডালি থেকে সাত মাথা পর্যন্ত, কলেজ বটতলা হয়ে",
-      area1: "মাটিডালি",
-      area2: "কলেজ বটতলা",
-      area3: "সাত মাথা",
-      area4: "বগুড়া সদর",
+      sub: "মাটিডালি, বিসিক, কলেজ বটতলা সহ বগুড়া সদরের ৯টি এলাকায় আমাদের সেবা পৌঁছে গেছে",
+      areas: [
+        "মাটিডালি",
+        "জয়পুরপাড়া",
+        "বিসিক",
+        "মোগলেশপুর",
+        "কলেজ বটতলা",
+        "ফুলবাড়ী",
+        "শিববাটি",
+        "কাটনারপাড়া",
+        "আটাপাড়া",
+      ],
       check: "আপনার এলাকা কি কভার করে?",
     },
 
     // Home — CTA
     cta: {
       title: "আজই হোক ডিজিটাল যাত্রার শুরু",
-      sub: "১০ হাজারের বেশি সন্তুষ্ট গ্রাহকের তালিকায় যোগ দিন। উপভোগ করুন বাংলাদেশের সেরা ইন্টারনেট অভিজ্ঞতা।",
+      sub: "১০০০+ সন্তুষ্ট গ্রাহকের তালিকায় যোগ দিন। উপভোগ করুন বগুড়ার সেরা ইন্টারনেট অভিজ্ঞতা।",
       btn: "আজই সংযোগ নিন",
       contact: "কথা বলুন",
     },
@@ -174,7 +181,7 @@ export const translations = {
       emailTitle: "ইমেইল করুন",
       emailDesc: "বিস্তারিত প্রশ্ন বা ব্যবসায়িক প্রস্তাব ইমেইলে পাঠান।",
       addressTitle: "অফিসের ঠিকানা",
-      addressDesc: "মাটিডালি, বগুড়া সদর, বগুড়া",
+      addressDesc: "বিসিক, বগুড়া সদর, বগুড়া",
       formTitle: "মেসেজ পাঠান",
       formSub: "ফর্মটি পূরণ করুন, আমরা শীঘ্রই আপনার সাথে যোগাযোগ করবো।",
       name: "আপনার নাম",
@@ -183,7 +190,17 @@ export const translations = {
       send: "মেসেজ পাঠান",
       coverageTitle: "আমাদের কভারেজ",
       coverageSub: "বর্তমানে আমরা বগুড়া সদরে সেবা প্রদান করছি",
-      areas: ["মাটিডালি", "কলেজ বটতলা", "সাত মাথা মোড়", "বগুড়া সদর"],
+      areas: [
+        "মাটিডালি",
+        "জয়পুরপাড়া",
+        "বিসিক",
+        "মোগলেশপুর",
+        "কলেজ বটতলা",
+        "ফুলবাড়ী",
+        "শিববাটি",
+        "কাটনারপাড়া",
+        "আটাপাড়া",
+      ],
     },
 
     // Footer
@@ -242,7 +259,7 @@ export const translations = {
       sub: "Blazing-fast speeds powered by fiber optic technology, 99.9% uptime, and 24/7 customer support — all in one package.",
       cta1: "Get Connected Now",
       cta2: "View Packages",
-      stat1: "10K+",
+      stat1: "1000+",
       stat1Label: "Happy Customers",
       stat2: "99.9%",
       stat2Label: "Uptime Guarantee",
@@ -295,17 +312,24 @@ export const translations = {
 
     coverage: {
       title: "Our Coverage Area",
-      sub: "Bogura Sadar — from Matidali to Sat Matha, via College Bot Tola",
-      area1: "Matidali",
-      area2: "College Bot Tola",
-      area3: "Sat Matha",
-      area4: "Bogura Sadar",
+      sub: "Serving 9 neighborhoods across Bogura Sadar including Matidali, BSCIC, and College Bot Tola",
+      areas: [
+        "Matidali",
+        "Joypur Para",
+        "BSCIC",
+        "Mogleshpur",
+        "College Bot Tola",
+        "Phulbari",
+        "Shibbati",
+        "Katnarpara",
+        "Atapara",
+      ],
       check: "Is your area covered?",
     },
 
     cta: {
       title: "Start Your Digital Journey Today",
-      sub: "Join 10,000+ happy customers and enjoy Bangladesh's finest internet experience.",
+      sub: "Join 1,000+ happy customers and enjoy Bogura's finest internet experience.",
       btn: "Get Connected Today",
       contact: "Talk to Us",
     },
@@ -368,7 +392,7 @@ export const translations = {
       emailTitle: "Email Us",
       emailDesc: "Send detailed inquiries or business proposals via email.",
       addressTitle: "Office Address",
-      addressDesc: "Matidali, Bogura Sadar, Bogura",
+      addressDesc: "BSCIC, Bogura Sadar, Bogura",
       formTitle: "Send a Message",
       formSub: "Fill out the form, we'll get back to you shortly.",
       name: "Your Name",
@@ -377,7 +401,17 @@ export const translations = {
       send: "Send Message",
       coverageTitle: "Our Coverage",
       coverageSub: "Currently serving Bogura Sadar area",
-      areas: ["Matidali", "College Bot Tola", "Sat Matha Mor", "Bogura Sadar"],
+      areas: [
+        "Matidali",
+        "Joypur Para",
+        "BSCIC",
+        "Mogleshpur",
+        "College Bot Tola",
+        "Phulbari",
+        "Shibbati",
+        "Katnarpara",
+        "Atapara",
+      ],
     },
 
     footer: {

@@ -26,7 +26,7 @@ export default function PageHero({ title, accent, sub, badge }) {
           initial={{ opacity: 0, y: 18 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.05 }}
-          className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-app"
+          className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-app leading-[1.25] pb-1"
         >
           {title}
           <span className="gradient-text">{accent}</span>

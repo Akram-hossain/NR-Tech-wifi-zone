@@ -42,11 +42,11 @@ export default function FinalCTA() {
                 <ArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
               </Link>
               <a
-                href="tel:01811813192"
+                href="tel:01901640268"
                 className="btn border-2 border-white/40 text-white hover:bg-white/10 backdrop-blur-md px-7 py-3.5 text-base font-bold"
               >
                 <Phone className="h-5 w-5" />
-                <span className="num-en">01811-813192</span>
+                <span className="num-en">01901-640268</span>
               </a>
             </div>
           </div>

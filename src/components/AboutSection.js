@@ -11,13 +11,13 @@ export default function AboutSection() {
   const points =
     lang === "bn"
       ? [
-          "১০ বছরেরও বেশি অভিজ্ঞতা",
+          "৩ বছরের বিশ্বস্ত অভিজ্ঞতা",
           "১০০% ফাইবার অপটিক নেটওয়ার্ক",
           "ডেডিকেটেড ব্যান্ডউইথ গ্যারান্টি",
           "BDIX ও আন্তর্জাতিক ব্যান্ডউইথ",
         ]
       : [
-          "Over 10 years of experience",
+          "3 years of trusted experience",
           "100% fiber optic network",
           "Dedicated bandwidth guarantee",
           "BDIX and international bandwidth",
@@ -26,12 +26,12 @@ export default function AboutSection() {
   const aboutTitle = lang === "bn" ? "আপনার বিশ্বস্ত ইন্টারনেট সঙ্গী" : "Your Trusted Internet Partner";
   const aboutSub =
     lang === "bn"
-      ? "এনআর টেক ওয়াইফাই জোন বগুড়ায় ২০১৪ সাল থেকে নির্ভরযোগ্য ব্রডব্যান্ড সেবা দিয়ে আসছে। আধুনিক ফাইবার অপটিক প্রযুক্তি, অভিজ্ঞ টিম এবং ২৪/৭ সাপোর্ট নিয়ে আমরা প্রতিদিন হাজারো পরিবারকে যুক্ত রাখছি ডিজিটাল বিশ্বের সাথে।"
-      : "NR Tech Wifi Zone has been delivering reliable broadband in Bogura since 2014. With modern fiber optic technology, an experienced team, and 24/7 support, we keep thousands of families connected to the digital world every day.";
+      ? "এনআর টেক ওয়াইফাই জোন বগুড়ায় ২০২৩ সাল থেকে নির্ভরযোগ্য ব্রডব্যান্ড সেবা দিয়ে আসছে। আধুনিক ফাইবার অপটিক প্রযুক্তি, অভিজ্ঞ টিম এবং ২৪/৭ সাপোর্ট নিয়ে আমরা প্রতিদিন ১০০০+ পরিবারকে যুক্ত রাখছি ডিজিটাল বিশ্বের সাথে।"
+      : "NR Tech Wifi Zone has been delivering reliable broadband in Bogura since 2023. With modern fiber optic technology, an experienced team, and 24/7 support, we keep 1,000+ families connected to the digital world every day.";
 
   const stats = [
-    { icon: Users2, value: 10000, suffix: "+", label: lang === "bn" ? "সন্তুষ্ট গ্রাহক" : "Happy Customers" },
-    { icon: Trophy, value: 10, suffix: "+", label: lang === "bn" ? "বছরের অভিজ্ঞতা" : "Years Experience" },
+    { icon: Users2, value: 1000, suffix: "+", label: lang === "bn" ? "সন্তুষ্ট গ্রাহক" : "Happy Customers" },
+    { icon: Trophy, value: 3, suffix: "+", label: lang === "bn" ? "বছরের অভিজ্ঞতা" : "Years Experience" },
     { icon: Award, value: 99, suffix: "%", label: lang === "bn" ? "আপটাইম" : "Uptime" },
   ];
 
@@ -51,7 +51,7 @@ export default function AboutSection() {
               <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-brand to-orange-500 rotate-3 shadow-glow" />
               <div className="absolute inset-0 rounded-3xl surface border border-app -rotate-3 grid place-items-center p-8">
                 <div className="text-center">
-                  <div className="text-7xl md:text-8xl font-extrabold gradient-text num-en">10+</div>
+                  <div className="text-7xl md:text-8xl font-extrabold gradient-text num-en pb-2">3+</div>
                   <p className="mt-2 text-lg font-semibold text-app">{lang === "bn" ? "বছরের সেবা" : "Years of Service"}</p>
                   <p className="mt-1 text-sm text-soft">{lang === "bn" ? "বগুড়া সদরে" : "in Bogura Sadar"}</p>
 

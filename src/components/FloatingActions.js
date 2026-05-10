@@ -27,7 +27,7 @@ export default function FloatingActions() {
       </button>
 
       <a
-        href="https://wa.me/8801811813192?text=Hello%20NR%20Tech"
+        href="https://api.whatsapp.com/send?phone=8801811813192"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="WhatsApp chat"
