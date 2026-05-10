@@ -156,7 +156,7 @@ export const faqs = {
   bn: [
     {
       q: "ইনস্টলেশন চার্জ কত?",
-      a: "নতুন সংযোগের জন্য এককালীন ইনস্টলেশন চার্জ ১,০০০ টাকা, যার মধ্যে ফ্রি রাউটার অন্তর্ভুক্ত।",
+      a: "নতুন সংযোগের জন্য এককালীন ইনস্টলেশন চার্জ ১,০০০ টাকা, যার মধ্যে কেবল, কানেক্টর ও সেটআপ অন্তর্ভুক্ত।",
     },
     {
       q: "চুক্তির মেয়াদ কত দিনের?",
@@ -178,7 +178,7 @@ export const faqs = {
   en: [
     {
       q: "What is the installation charge?",
-      a: "One-time installation charge is BDT 1,000 for new connection, which includes a free router.",
+      a: "One-time installation charge is BDT 1,000 for new connection, which covers cable, connectors, and setup.",
     },
     {
       q: "What is the contract duration?",

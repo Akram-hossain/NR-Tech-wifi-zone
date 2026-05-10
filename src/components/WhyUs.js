@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Zap, Server, Headphones, Router, ShieldCheck, Truck } from "lucide-react";
+import { Zap, Server, Headphones, Gamepad2, ShieldCheck, Truck } from "lucide-react";
 import { useI18n } from "@/lib/i18n-context";
 
 export default function WhyUs() {
@@ -11,7 +11,7 @@ export default function WhyUs() {
     { icon: Zap, title: t.why.f1Title, desc: t.why.f1Desc },
     { icon: Server, title: t.why.f2Title, desc: t.why.f2Desc },
     { icon: Headphones, title: t.why.f3Title, desc: t.why.f3Desc },
-    { icon: Router, title: t.why.f4Title, desc: t.why.f4Desc },
+    { icon: Gamepad2, title: t.why.f4Title, desc: t.why.f4Desc },
     { icon: ShieldCheck, title: t.why.f5Title, desc: t.why.f5Desc },
     { icon: Truck, title: t.why.f6Title, desc: t.why.f6Desc },
   ];
