@@ -1,0 +1,39 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(mkdir -p public/images public/icons src/app/packages src/app/services src/app/contact src/components src/lib && mv assets/images/logo.svg public/logo.svg && mv assets/images/favicon.svg public/favicon.svg && mv assets/images/icons/* public/icons/ && rm -rf assets)",
+      "Bash(npm install *)",
+      "Bash(npx next *)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(netstat -ano)",
+      "Bash(tasklist /FI \"PID eq 9292\")",
+      "Bash(powershell -NoProfile -Command \"Stop-Process -Id 9292 -Force -ErrorAction SilentlyContinue; Start-Sleep -Seconds 1; netstat -ano | findstr ':5173' | findstr LISTENING\")",
+      "PowerShell(Get-Process -Id 9292 -ErrorAction SilentlyContinue | Select-Object Id, ProcessName; Stop-Process -Id 9292 -Force -ErrorAction SilentlyContinue; Start-Sleep -Milliseconds 500; \\(Get-NetTCPConnection -LocalPort 5173 -State Listen -ErrorAction SilentlyContinue | Measure-Object\\).Count)",
+      "Bash(curl -s http://localhost:5173/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:5173/)",
+      "Bash(curl -s -I http://localhost:5173/)",
+      "Bash(curl -s http://localhost:5173/ -o /tmp/page.html)",
+      "Read(//tmp/**)",
+      "Bash(curl -s http://localhost:5173/packages -o /tmp/p.html)",
+      "Bash(curl -s http://localhost:5173/services -o /tmp/s.html)",
+      "Bash(curl -s http://localhost:5173/contact -o /tmp/c.html)",
+      "Bash(curl -s -o /dev/null -w \"/: %{http_code} %{size_download}b\\\\n\" http://localhost:5173/)",
+      "Bash(curl -s -o /dev/null -w \"/packages: %{http_code} %{size_download}b\\\\n\" http://localhost:5173/packages)",
+      "Bash(curl -s -o /dev/null -w \"/services: %{http_code} %{size_download}b\\\\n\" http://localhost:5173/services)",
+      "Bash(curl -s -o /dev/null -w \"/contact: %{http_code} %{size_download}b\\\\n\" http://localhost:5173/contact)",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"/: %{http_code} %{size_download}b\\\\n\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"/packages: %{http_code} %{size_download}b\\\\n\" http://localhost:3000/packages)",
+      "Bash(curl -s -o /dev/null -w \"/services: %{http_code} %{size_download}b\\\\n\" http://localhost:3000/services)",
+      "Bash(curl -s -o /dev/null -w \"/contact: %{http_code} %{size_download}b\\\\n\" http://localhost:3000/contact)",
+      "Bash(cat C:\\\\\\\\Users\\\\\\\\Common\\\\\\\\AppData\\\\\\\\Local\\\\\\\\Temp\\\\\\\\claude\\\\\\\\E--A-CURRENT-NR-Tech-wifi-zone--claude-worktrees-keen-kirch-0e23e3\\\\\\\\21da2f20-2923-40d1-9b69-8975b4dc6d7a\\\\\\\\tasks\\\\\\\\bpvb0k6lw.output)",
+      "Bash(cat /c/Users/Common/AppData/Local/Temp/claude/E--A-CURRENT-NR-Tech-wifi-zone--claude-worktrees-keen-kirch-0e23e3/21da2f20-2923-40d1-9b69-8975b4dc6d7a/tasks/bpvb0k6lw.output 2>&1 | head -20)",
+      "Bash(pwd && echo \"---\" && ls E:/A_CURRENT/NR-Tech-wifi-zone/package.json E:/A_CURRENT/NR-Tech-wifi-zone/index.html 2>&1)",
+      "Bash(git -C E:/A_CURRENT/NR-Tech-wifi-zone status --short)",
+      "Bash(git -C E:/A_CURRENT/NR-Tech-wifi-zone branch --show-current)",
+      "Bash(git add *)"
+    ]
+  }
+}
