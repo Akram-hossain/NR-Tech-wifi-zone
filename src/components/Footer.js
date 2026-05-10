@@ -120,9 +120,9 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:nrwifizone@gmail.com" className="flex items-center gap-2.5 text-soft hover:text-brand transition break-all">
+                <a href="mailto:nrtechbd2024@gmail.com" className="flex items-center gap-2.5 text-soft hover:text-brand transition break-all">
                   <Mail className="h-4 w-4 text-brand shrink-0" />
-                  <span className="num-en">nrwifizone@gmail.com</span>
+                  <span className="num-en">nrtechbd2024@gmail.com</span>
                 </a>
               </li>
             </ul>

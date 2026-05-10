@@ -176,8 +176,8 @@ export default function Header() {
               <a href="https://wa.me/8801811813192" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-app hover:text-brand">
                 <span className="num-en">💬 01811-813192 (WhatsApp)</span>
               </a>
-              <a href="mailto:nrwifizone@gmail.com" className="flex items-center gap-2 text-app hover:text-brand">
-                <span className="num-en">✉️ nrwifizone@gmail.com</span>
+              <a href="mailto:nrtechbd2024@gmail.com" className="flex items-center gap-2 text-app hover:text-brand">
+                <span className="num-en">✉️ nrtechbd2024@gmail.com</span>
               </a>
             </div>
           </div>

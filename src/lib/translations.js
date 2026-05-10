@@ -28,7 +28,7 @@ export const translations = {
     top: {
       welcome: "ওয়াইফাই জোন আপনাকে স্বাগতম",
       phone: "০১৯০১-৬৪০২৬৮",
-      email: "nrwifizone@gmail.com",
+      email: "nrtechbd2024@gmail.com",
     },
 
     // Home — Hero
@@ -248,7 +248,7 @@ export const translations = {
     top: {
       welcome: "Welcome to NR Wifi Zone",
       phone: "01811-813192",
-      email: "nrwifizone@gmail.com",
+      email: "nrtechbd2024@gmail.com",
     },
 
     hero: {

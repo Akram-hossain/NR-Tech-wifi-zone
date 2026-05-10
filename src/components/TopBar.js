@@ -21,11 +21,11 @@ export default function TopBar() {
             <span className="num-en">01901-640268</span>
           </a>
           <a
-            href="mailto:nrwifizone@gmail.com"
+            href="mailto:nrtechbd2024@gmail.com"
             className="flex items-center gap-1.5 opacity-80 hover:opacity-100 hover:text-brand transition"
           >
             <Mail className="h-3 w-3" />
-            <span className="num-en">nrwifizone@gmail.com</span>
+            <span className="num-en">nrtechbd2024@gmail.com</span>
           </a>
         </div>
         <div className="flex items-center gap-3">
